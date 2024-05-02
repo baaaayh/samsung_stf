@@ -55,6 +55,7 @@ body {
   color: #fff;
 }
 .main-kv__title h3 {
+  font-family: "Rubik";
   font-size: 80px;
   font-weight: 700;
   line-height: 1;
@@ -145,6 +146,7 @@ body {
   color: #fff;
 }
 .main-kv__number strong {
+  font-family: "Rubik";
   font-size: 40px;
   font-weight: 600;
   line-height: 1;
