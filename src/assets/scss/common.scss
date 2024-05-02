@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@import 'common/base';
+@import 'common/font';
+@import 'common/variables';
+@import 'common/mixin';
+
+@import 'common/media';
+
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    .logo {
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+}
+
+.gnb {
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        > li { 
+            > a {
+                display: block;
+                padding: 0 49px;
+                font-size: 18px;
+                line-height: 80px;
+                text-align: center;
+            }
+        }
+    }
+    .depth2 {
+        display: none;
+        ul {
+            li {
+                a {
+                    
+                }
+            }
+        }
+    }
+}
+
+.right-box {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.user {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    a {
+        font-size: 14px;
+        line-height: 1;
+    }
+}
+
+.util {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn {
+    display: inline-block;
+}
+
+.btn-search {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/icons/icon_search.svg") center / auto no-repeat;
+    font-size: 0;
+}
+
+.btn-allmenu {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/icons/icon_allmenu.svg") center / auto no-repeat;
+    font-size: 0;
+}
