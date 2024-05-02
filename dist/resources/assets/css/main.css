@@ -282,9 +282,15 @@ body {
   border-radius: 21px;
   font-family: "Rubik";
   font-size: 16px;
+  font-weight: 400;
   line-height: 42px;
   color: #fff;
   background-color: #00117A;
+  transition: 0.13s ease;
+}
+.card__item--01 .card__menu a:hover {
+  background-color: #fff;
+  color: #00117A;
 }
 .card__item--02 {
   background-color: #3468EF;

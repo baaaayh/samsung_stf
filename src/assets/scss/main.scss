@@ -299,9 +299,15 @@ body {
                     border-radius: 21px;
                     font-family: "Rubik";
                     font-size: 16px;
+                    font-weight: 400;
                     line-height: 42px;
                     color: #fff;
                     background-color: #00117A;
+                    transition: 0.13s ease;
+                    &:hover {
+                        background-color: #fff;
+                        color: #00117A;
+                    }
                 }
             }
         }
