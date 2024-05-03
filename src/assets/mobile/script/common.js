@@ -1,14 +1,4 @@
 $(function () {
-    const header = {
-        toggleMenu() {
-            $(this).toggleClass('active').siblings('li').removeClass('active');
-            $('.depth2').stop().slideToggle(250, 'easeInSine');
-        },
-        init() {
-            $('.gnb__item').hover(this.toggleMenu);
-        },
-    };
-
     const footer = {
         toggleFamilySite() {
             $(this).toggleClass('active').siblings('ul').slideToggle();
@@ -25,5 +15,5 @@ $(function () {
         },
     };
 
-    return [header.init(), footer.init()];
+    return [footer.init()];
 });

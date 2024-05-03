@@ -74,7 +74,6 @@ function CompileCSS() {
                 }).on('error', sass.logError)
             )
             .pipe(dest(CONFIG.deploy.ASSETS.STYLE));
-        resolve();
         src(CONFIG.workspace.ASSETS.MO_STYLE + '/*.scss')
             .pipe(
                 sass({
@@ -219,7 +218,7 @@ function Watch() {
     watch(CONFIG.workspace.ASSETS.SCRIPT + '/**/*.js', Script).on('change', browserSync.reload);
     watch(CONFIG.workspace.ASSETS.MO_STYLE + '/**/*.scss', CompileCSS).on('change', browserSync.reload);
     watch(CONFIG.workspace.ASSETS.MO_IMAGES + '/**/*.*', Imagemin);
-    watch(CONFIG.workspace.ASSETS.MO_SCRIPT + '/*.js', Script).on('change', browserSync.reload);
+    watch(CONFIG.workspace.ASSETS.MO_SCRIPT + '/**/*.js', Script).on('change', browserSync.reload);
 }
 
 const defaultTasks = [CompileCSS, EJS, Script, Library, Font, Lang, Imagemin, Lottie, BrowserSync, Watch];

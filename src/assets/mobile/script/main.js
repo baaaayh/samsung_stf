@@ -28,8 +28,8 @@ $(function () {
                 autoplay: true,
                 autoplaySpeed: 7000,
                 pauseOnHover: true,
-                nextArrow: '.main-kv__button--next',
-                prevArrow: '.main-kv__button--prev',
+                dots: true,
+                appendDots: $('.main-kv__control'),
             });
         },
         getCurrentIndex() {
