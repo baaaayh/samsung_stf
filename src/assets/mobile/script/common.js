@@ -1,4 +1,15 @@
 $(function () {
+    const header = {
+        scrollableGnb() {
+            $('.gnb_scr').mCustomScrollbar({
+                axis: 'y',
+                scrollEasing: 'easeOut',
+            });
+        },
+        init() {
+            this.scrollableGnb();
+        },
+    };
     const footer = {
         toggleFamilySite() {
             $(this).toggleClass('active').siblings('ul').slideToggle();
@@ -15,5 +26,5 @@ $(function () {
         },
     };
 
-    return [footer.init()];
+    return [header.init(), footer.init()];
 });

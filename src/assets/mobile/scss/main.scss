@@ -124,7 +124,7 @@
         background-color: #fff;
         ul {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             height: 100%;
             align-items: center;
             li {
@@ -282,7 +282,7 @@
     }
 }
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 360px){
     .main-kv__nav {
         ul {
             flex-wrap: wrap;
