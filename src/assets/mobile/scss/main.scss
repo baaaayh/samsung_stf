@@ -31,7 +31,7 @@
     &__view {
         position: relative;
         overflow: hidden;
-        border-radius: 15px;
+        border-radius: 10px;
     }
     &__slide {
         position: relative;
@@ -71,6 +71,9 @@
             & + h2 {
                 margin-top: 10px;
             }
+        }
+        .btn-wrap {
+            margin-top: 20px;
         }
     }
 
@@ -148,7 +151,7 @@
     &__control {
         position: absolute;
         left: 0;
-        bottom: 45px;
+        bottom: 20px;
         width: 100%;
         padding: 0 17px;
         display: flex;
@@ -161,15 +164,18 @@
             bottom: auto;
             text-align: left;
             font-size: 0;
+            text-align: center;
             li {
                 display: inline-block;
                 width: auto;
                 height: auto;
                 font-size: 0;
+                margin: 0 3px;
                 button {
                     display: inline-block;
                     width: 6px;
                     height: 6px;
+                    padding: 0;
                     border-radius: 50%;
                     background-color: rgba(255, 255, 255, 0.3);
                     &::before {
@@ -187,7 +193,7 @@
 
     &__icon {
         img {
-            width: 70px;
+            width: 50px;
         }
     }
     &__text {
@@ -207,7 +213,7 @@
         position: relative;
         overflow: hidden;
         flex: 1;
-        border-radius: 15px;
+        border-radius: 10px;
         &::before {
             content:"";
             display: inline-block;
@@ -215,13 +221,13 @@
         }
         .card__inner {
             position: relative;
-            height: 100%;
+            min-height: 120px;
             padding: 20px;
             box-sizing: border-box;
         }
         .card__sub {
             font-size: 22px;
-            line-height: 34px;
+            line-height: 26px;
             letter-spacing: -0.44px;
             font-weight: 600;
             color: #fff;

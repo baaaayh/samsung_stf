@@ -5,6 +5,35 @@
 @import 'common/mixin';
 @import 'common/media';
 
+
+.btn {
+    display: inline-block;
+}
+
+.btn-default {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 27px;
+    padding: 0 46px;
+    transition: 0.14s ease;
+
+    &__text {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 52px;
+        color: #fff;
+        transition: 0.14s ease;
+    }
+
+    &:hover {
+        background-color: #fff;
+        .btn-default__text {
+            color: #000;
+        }
+    }
+}
+
 .header {
     position: absolute;
     top: 0;
@@ -12,22 +41,53 @@
     width: 100%;
     height: auto;
     background-color: #fff;
-    z-index: 1;
+    z-index: 2;
+    
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        max-width: 1800px;
+        max-width: 1760px;
         width: 100%;
         margin:0 auto;
         padding: 0 20px;
         box-sizing: border-box;
     }
+
+    &::after {
+        content:"";
+        position: absolute;
+        top: 100px;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background-color: #eee;
+        z-index: 1;
+    }
+
+}
+
+.dim {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: 0.24s ease;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 .logo {
     display: inline-block;
-    height: 101px;
+    height: 100px;
     a {
         display: inline-flex;
         height: 100%;
@@ -43,19 +103,36 @@
     &__list {
         display: flex;
         > li {
+
             > a {
+                position: relative;
                 display: block;
                 padding: 0 51px;
                 font-size: 18px;
                 font-weight: 500;
-                line-height: 101px;
+                line-height: 100px;
                 text-align: center;
                 letter-spacing: -0.36px;
                 box-sizing: border-box;
+                &::before {
+                    content:'';
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 0;
+                    height: 2px;
+                    transform: translateX(-50%);
+                    background-color: #00117A;
+                    transition: 0.24s ease;
+                }
             }
             &.active {
                 > a {
                     color: #1428A0;
+                    &::before {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -65,15 +142,19 @@
 .depth2 {
     display: none;
     flex: 1;
-    padding-bottom: 40px;
     box-sizing: border-box;
     ul {
+        padding-top: 12px;
+        padding-bottom: 48px;
         li {
             a {
                 display: block;
-                padding: 15px 0;
+                padding: 8px 0;
                 text-align: center;
                 box-sizing: border-box;
+                font-size: 16px;
+                line-height: 1.2;
+                letter-spacing: -0.32px;
                 &:hover {
                     font-weight: 500;
                     color: #1428A0;
@@ -87,7 +168,7 @@
     display: flex;
     align-items: center;
     gap: 60px;
-    height: 101px;
+    height: 100px;
 }
 
 .user {
@@ -132,7 +213,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
-        max-width: 1800px;
+        max-width: 1760px;
         width: 100%;
         margin: 0 auto;
         padding: 0 20px;

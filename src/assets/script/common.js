@@ -1,29 +1,50 @@
 $(function () {
+    const $gnbItems = $('.gnb__item');
+    const $depth2 = $('.depth2');
+    const $dim = $('.dim');
+    const $familySiteBtn = $('.family-site button');
+    const $familySiteUl = $familySiteBtn.siblings('ul');
+
     const header = {
-        toggleMenu() {
-            $(this).toggleClass('active').siblings('li').removeClass('active');
-            $('.depth2').stop().slideToggle(250, 'easeInSine');
+        openMenu() {
+            const $this = $(this);
+            $this.addClass('active').siblings('li').removeClass('active');
+            $depth2.stop().slideDown(250, 'easeInSine');
+        },
+        closeMenu() {
+            const $this = $(this);
+            $this.removeClass('active');
+            $depth2.stop().slideUp(250, 'easeInSine');
+        },
+        visibleDim() {
+            $dim.addClass('active');
+        },
+        hiddenDim() {
+            $dim.removeClass('active');
         },
         init() {
-            $('.gnb__item').hover(this.toggleMenu);
+            $gnbItems.on('mouseenter', this.openMenu).on('mouseleave', this.closeMenu);
+            $gnbItems.on('mouseenter', this.visibleDim).on('mouseleave', this.hiddenDim);
         },
     };
 
     const footer = {
         toggleFamilySite() {
-            $(this).toggleClass('active').siblings('ul').slideToggle();
+            const $this = $(this);
+            $this.toggleClass('active').siblings('ul').slideToggle();
         },
         closeFamilySite(e) {
-            const $target = $(e.target).parents();
-            if (!$target.hasClass('family-site')) {
-                $('.family-site button').removeClass('active').siblings('ul').slideUp();
+            const $target = $(e.target).closest('.family-site');
+            if (!$target.length) {
+                $familySiteBtn.removeClass('active').siblings('ul').slideUp();
             }
         },
         init() {
-            $('.family-site button').on('click', this.toggleFamilySite);
+            $familySiteBtn.on('click', this.toggleFamilySite);
             $(document).on('click', (e) => this.closeFamilySite(e));
         },
     };
 
-    return [header.init(), footer.init()];
+    header.init();
+    footer.init();
 });

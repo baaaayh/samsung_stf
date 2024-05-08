@@ -17,7 +17,6 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        max-width: 1800px;
         width: 100%;
         margin:0 auto;
         padding: 0 20px;
@@ -53,6 +52,23 @@
 .gnb {
     a {
         line-height: 1;
+    }
+}
+
+.btn-default {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 27px;
+    padding: 0 30px;
+    transition: 0.14s ease;
+
+    &__text {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 38px;
+        color: #fff;
+        transition: 0.14s ease;
     }
 }
 
