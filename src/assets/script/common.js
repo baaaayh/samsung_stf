@@ -3,7 +3,6 @@ $(function () {
     const $depth2 = $('.depth2');
     const $dim = $('.dim');
     const $familySiteBtn = $('.family-site button');
-    const $familySiteUl = $familySiteBtn.siblings('ul');
 
     const header = {
         openMenu() {
