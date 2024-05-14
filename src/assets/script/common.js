@@ -37,6 +37,9 @@ $(function () {
             if (!$target.length) {
                 $familySiteBtn.removeClass('active').siblings('ul').slideUp();
             }
+            if ($(e.target).parents().hasClass('family-site__list')) {
+                $('.family-site button').removeClass('active').siblings('ul').slideUp();
+            }
         },
         init() {
             $familySiteBtn.on('click', this.toggleFamilySite);

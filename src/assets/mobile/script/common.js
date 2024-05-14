@@ -19,6 +19,9 @@ $(function () {
             if (!$target.hasClass('family-site')) {
                 $('.family-site button').removeClass('active').siblings('ul').slideUp();
             }
+            if ($(e.target).parents().hasClass('family-site__list')) {
+                $('.family-site button').removeClass('active').siblings('ul').slideUp();
+            }
         },
         init() {
             $('.family-site button').on('click', this.toggleFamilySite);
