@@ -41,7 +41,8 @@
     width: 100%;
     height: auto;
     background-color: #fff;
-    z-index: 2;
+    font-family: "Pretendard", "맑은 고딕", "Malgun Gothic", sans-serif;
+    z-index: 11;
     
     &__inner {
         display: flex;
@@ -362,4 +363,183 @@
     }
 
     
+}
+
+/*cm_assign */
+.assign_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  overflow: hidden;
+  opacity: 0;
+}
+.assign_wrap .assign_boxc {
+  width: 340px;
+  opacity: 0;
+  background: #fff;
+  max-width: 340px;
+  min-width: 340px;
+  padding: 60px 45px 40px 45px;
+}
+.assign_wrap .assign_boxc > .tit {
+  font-size: 35px;
+  color: #222;
+  text-align: center;
+}
+.assign_wrap .assign_boxc .assign_list {
+  width: 340px;
+  margin: 38px auto 0 auto;
+}
+.assign_wrap .assign_boxc .assign_list > div > a {
+  background: #fff;
+  width: 340px;
+  border: 1px solid #d6d6d6;
+  box-sizing: border-box;
+  line-height: 58px;
+  text-align: center;
+  padding-left: 25px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+.assign_wrap .assign_boxc .assign_list > div > a:before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #439ec3;
+  transition: all ease .4s;
+}
+.assign_wrap .assign_boxc .assign_list > div > a:hover:before, .assign_wrap .assign_boxc .assign_list > div > a:focus:before {
+  width: 100%;
+  transition: all ease .4s;
+  z-index: -1;
+}
+.assign_wrap .assign_boxc .assign_list > div > a:hover:after, .assign_wrap .assign_boxc .assign_list > div > a:focus:after {
+  background: url(https://samsungstf.org/ssrfPr/images/common/assign_arr_on.png);
+  transition: all ease .2s;
+  transition-delay: .2s;
+}
+.assign_wrap .assign_boxc .assign_list > div > a:hover span.ico, .assign_wrap .assign_boxc .assign_list > div > a:focus span.ico {
+  transition: all ease .2s;
+}
+.assign_wrap .assign_boxc .assign_list > div > a:hover span.ico:after, .assign_wrap .assign_boxc .assign_list > div > a:focus span.ico:after {
+  background: #7cbbd5;
+  transition: all ease .2s;
+}
+.assign_wrap .assign_boxc .assign_list > div > a:hover span.ico.rico1, .assign_wrap .assign_boxc .assign_list > div > a:focus span.ico.rico1 {
+  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_01_on.png);
+}
+.assign_wrap .assign_boxc .assign_list > div > a:hover span.ico.rico2, .assign_wrap .assign_boxc .assign_list > div > a:focus span.ico.rico2 {
+  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_02_on.png);
+}
+.assign_wrap .assign_boxc .assign_list > div > a:hover span.ico.rico3, .assign_wrap .assign_boxc .assign_list > div > a:focus span.ico.rico3 {
+  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_03_on.png);
+}
+.assign_wrap .assign_boxc .assign_list > div > a:hover span.ico.rico4, .assign_wrap .assign_boxc .assign_list > div > a:focus span.ico.rico4 {
+  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_04_on.png);
+}
+.assign_wrap .assign_boxc .assign_list > div > a:hover span.ico.rico5, .assign_wrap .assign_boxc .assign_list > div > a:focus span.ico.rico5 {
+  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_05_on.png);
+}
+.assign_wrap .assign_boxc .assign_list > div > a:hover span.text, .assign_wrap .assign_boxc .assign_list > div > a:focus span.text {
+  color: #fff;
+  transition: all ease .2s;
+}
+.assign_wrap .assign_boxc .assign_list > div > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.assign_wrap .assign_boxc .assign_list > div + div {
+  margin-top: 20px;
+}
+.assign_wrap .assign_boxc .assign_list > div > a:after {
+  content: "";
+  position: absolute;
+  background: url(https://samsungstf.org/ssrfPr/images/common/assign_arr.png);
+  width: 6px;
+  height: 10px;
+  top: 50%;
+  margin-top: -5px;
+  right: 20px;
+  transition: all ease .2s;
+}
+.assign_wrap .assign_boxc .assign_list > div > a span.ico {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 50%;
+  margin-top: -18px;
+  left: 11px;
+  transition: all ease .2s;
+}
+.assign_wrap .assign_boxc .assign_list > div > a span.ico:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  right: -12px;
+  background: #d6d6d6;
+  top: -2px;
+  transition: all ease .2s;
+}
+.assign_wrap .assign_boxc .assign_list > div > a span.ico.rico1 {
+  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_01.png);
+}
+.assign_wrap .assign_boxc .assign_list > div > a span.ico.rico2 {
+  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_02.png);
+}
+.assign_wrap .assign_boxc .assign_list > div > a span.ico.rico3 {
+  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_03.png);
+}
+.assign_wrap .assign_boxc .assign_list > div > a span.ico.rico4 {
+  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_04.png);
+}
+.assign_wrap .assign_boxc .assign_list > div > a span.ico.rico5 {
+  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_05.png);
+}
+.assign_wrap .assign_boxc .assign_list > div > a span.text {
+  color: #222;
+  font-size: 20px;
+  transition: all ease .2s;
+}
+
+.assign_wrap .assign_boxc .assign_list > div > p {
+    position: relative;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-family: "Pretendard", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #444;
+
+    &::before {
+        content:'';
+        position: absolute;
+        top: 7px;
+        left: 0;
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #CDCDCD;
+    }
+}
+
+.assign_wrap .assign_boxc .clsbtn_r {
+  width: 25px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  right: -45px;
+  background: url(https://samsungstf.org/ssrfPr/images/common/clsbtn_r.png);
+  cursor: pointer;
 }

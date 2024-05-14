@@ -1,0 +1,184 @@
+<div class="cm_search_wrap">
+    <div class="inner">
+        <div class="clsBtn"></div>
+
+        <div class="searchbox_grid">
+            <form class="_searchForm" method="get" id="cmSearch" name="cmSearch" action="../cm/search.do" onsubmit="return cmSearchCheck()">
+                <div class="cm_search_type">
+                    <div class="opt lab_w185">
+                        <select class="sok400" id="cmSearchCondition" name="cmSearchCondition" value="" onchange="searchCmType()">
+                            <option value="cmFaq">자주묻는 질문</option>
+                            <option value="cmIntro">소개</option>
+                            <option value="cmNewsroom">뉴스</option>
+                            <option value="cmProgram">프로그램</option>
+                            <option value="cmResearcher">과제&amp;연구자</option>
+                            <option value="cmProjectContent">연구내용</option>
+                        </select>
+                    </div>
+                    <div id="toggleCmSearchType" style="display: none">
+                        <div class="opt lab_w185">
+                            <select class="sok400" id="cmsearchType" name="cmsearchType" value="">
+                                <option value="researcherName">연구자</option>
+                                <option value="projectName">연구제목</option>
+                                <option value="program">연구분야</option>
+                                <option value="researchBelong">소속기관</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="toggleCmSearchProgramType" style="display: none">
+                        <div class="opt lab_w185">
+                            <select class="sok400" id="cmsearchProgramType" name="cmsearchProgramType" value="">
+                                <option value="1">기초과학</option>
+                                <option value="2">소재</option>
+                                <option value="3">ICT</option>
+                                <option value="4">지정테마</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchbox">
+                    <div class="ipt cm_search">
+                        <input class="sok500" placeholder="검색어를 입력하세요." type="text" id="cmSearchKeyword" name="cmSearchKeyword" title="검색" />
+                    </div>
+                    <div class="ipt_cancle">
+                        <a class="cancle" id="cmSearchCancle"></a>
+                    </div>
+
+                    <div class="ipt_submit">
+                        <button type="submit" class="search_submit"></button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="linkbox">
+                <p class="tit sok600">링크 바로가기</p>
+                <ul class="linkbox_wrap">
+                    <li><a href="../intro/listFaq.do" title="자주묻는 질문" target="_self">자주묻는 질문</a></li>
+                    <li><a href="../cm/map01.do" title="찾아오시는 길" target="_self">찾아오시는 길</a></li>
+                    <!-- <li><a href="../intro/writeQna.do" title ="1:1문의" target="_self">1:1문의</a></li> -->
+                    <li><a href="../intro/business.do" title="사회공헌사업" target="_self">사회공헌사업</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer__top">
+        <div class="footer__inner">
+            <ul class="footer__nav">
+                <li><a href="../cm/terms02.do">개인정보처리방침</a></li>
+                <li><a href="../cm/terms03.do">이메일무단수집거부</a></li>
+                <li><a href="../cm/terms01.do">이용약관</a></li>
+                <li><a href="../cm/map01.do">찾아오시는 길</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__inner">
+            <div class="footer__left">
+                <div class="footer__info">
+                    <ul>
+                        <li class="footer__item">
+                            <div class="footer__tit">SCIENCE 프로그램 문의</div>
+                            <ul>
+                                <li>
+                                    <div class="footer__text">삼성미래기술육성재단</div>
+                                    <div class="footer__text">02-597-0401</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__item">
+                            <div class="footer__tit">TECHNOLOGY 프로그램 문의</div>
+                            <ul>
+                                <li>
+                                    <div class="footer__text">삼성전자 미래기술육성센터</div>
+                                    <div class="footer__text">02-6147-8655(소재) / 8666(ICT)</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__item">
+                            <div class="footer__tit">시스템 문의</div>
+                            <ul>
+                                <li>
+                                    <div class="footer__text">saitdev@samsung.com</div>
+                                    <div class="footer__text">031-697-2924</div>
+                                </li>
+                                <li>
+                                    <div class="footer__text">운영시간 09:00~17:00 (주말/공휴일 휴무)</div>
+                                    <div class="footer__text">점심시간 12:30~13:30</div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__copyright">© 2024. Samsung Science & Technology Foundation. All rights reserved.</div>
+            </div>
+            <div class="footer__right">
+                <div class="family-site">
+                    <ul class="family-site__list">
+                        <li><a href="https://www.msit.go.kr/" target="_blank">과학기술정보통신부</a></li>
+                        <li><a href="https://www.msit.go.kr/" target="_blank">과학기술정보통신부</a></li>
+                    </ul>
+                    <button type="button">관련 사이트</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    function searchCmType() {
+        var cmSearchCondition = document.getElementById('cmSearchCondition');
+        var toggleCmSearchType = document.getElementById('toggleCmSearchType');
+        var toggleCmSearchProgramType = document.getElementById('toggleCmSearchProgramType');
+
+        var cmsearchType = document.getElementById('cmsearchType');
+        var cmsearchProgramType = document.getElementById('cmsearchProgramType');
+
+        if (cmSearchCondition.options[cmSearchCondition.selectedIndex].value == 'cmResearcher') {
+            toggleCmSearchType.style.display = 'block';
+            toggleCmSearchProgramType.style.display = 'none';
+        } else if (cmSearchCondition.options[cmSearchCondition.selectedIndex].value == 'cmProjectContent') {
+            toggleCmSearchType.style.display = 'none';
+            toggleCmSearchProgramType.style.display = 'block';
+        } else {
+            toggleCmSearchType.style.display = 'none';
+            toggleCmSearchProgramType.style.display = 'none';
+        }
+
+        return;
+    }
+
+    function cmsearchProjectContentConfirm() {
+        var cmSearchCondition = document.getElementById('cmSearchCondition');
+
+        if (cmSearchCondition.options[cmSearchCondition.selectedIndex].value == 'cmProjectContent') {
+            if (confirm('연구내용 검색 시 시간이 오래걸립니다. 그래도 검색하시겠습니까?')) {
+                return true;
+            }
+        } else {
+            return true;
+        }
+
+        return false;
+    }
+
+    function switchActionUrl() {
+        $('#cmSearch').attr('action', '../cm/search.do');
+        $('#cmSearch').submit();
+    }
+
+    function cmSearchCheck() {
+        if (cmsearchProjectContentConfirm()) {
+            var cmSearchKeyword = $('#cmSearchKeyword').val();
+
+            if (cmSearchKeyword == '') {
+                cmSearchKeyword = $('#resultcmSearchKeyword').val();
+
+                if (cmSearchKeyword == '') {
+                    alert('검색어를 입력해주세요.');
+                }
+                return false;
+            }
+        }
+    }
+</script>

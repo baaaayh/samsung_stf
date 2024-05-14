@@ -1,4 +1,5 @@
 $(function () {
+    const $gnb = $('.gnb');
     const $gnbItems = $('.gnb__item');
     const $depth2 = $('.depth2');
     const $dim = $('.dim');
@@ -7,13 +8,20 @@ $(function () {
     const header = {
         openMenu() {
             const $this = $(this);
-            $this.addClass('active').siblings('li').removeClass('active');
             $depth2.stop().slideDown(250, 'easeInSine');
         },
         closeMenu() {
             const $this = $(this);
             $this.removeClass('active');
             $depth2.stop().slideUp(250, 'easeInSine');
+        },
+        activeItem() {
+            const $this = $(this);
+            $this.addClass('active').siblings('li').removeClass('active');
+        },
+        inActiveItem() {
+            const $this = $(this);
+            $this.removeClass('active');
         },
         visibleDim() {
             $dim.addClass('active');
@@ -22,7 +30,8 @@ $(function () {
             $dim.removeClass('active');
         },
         init() {
-            $gnbItems.on('mouseenter', this.openMenu).on('mouseleave', this.closeMenu);
+            $gnb.on('mouseenter', this.openMenu).on('mouseleave', this.closeMenu);
+            $gnbItems.on('mouseenter', this.activeItem).on('mouseleave', this.inActiveItem);
             $gnbItems.on('mouseenter', this.visibleDim).on('mouseleave', this.hiddenDim);
         },
     };

@@ -6,7 +6,13 @@
 }
 
 .kv-container {
-    padding-top: 50px;
+    padding-top: 80px;
+}
+
+@media screen and (max-width: 750px) {
+    .kv-container {
+        padding-top: 50px;
+    }
 }
 
 .main-kv {
