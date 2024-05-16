@@ -9,8 +9,6 @@
             </div>
         </div>
 
-        
-
         <!--wrapper.-->
         <div class="wrapper subpage">
             <!--web accessibility -->
@@ -24,77 +22,6 @@
 
             <!--header-->
             <%- include("./include/sub_header.html") %>
-
-                <!--assign-->
-                <div class="assign_wrap cm">
-                    <div class="assign_boxc">
-                        <div class="clsbtn_r"></div>
-                        <div class="tit sok600">과제응모</div>
-                        <ul class="assign_list">
-                            <li>
-                                <a href="http://www.samsungstf.org:8081" target="_blank">
-                                    <span class="ico rico1"></span>
-                                    <span class="text sok500">Science</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="http://www.samsungstf.org:8082" target="_blank">
-                                    <span class="ico rico2"></span>
-                                    <span class="text sok500">Technology</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--assign-->
-
-                <!--assign mypage-->
-                <div class="assign_wrap my">
-                    <div class="assign_boxc">
-                        <div class="clsbtn_r"></div>
-                        <div class="tit sok600">로그인</div>
-                        <ul class="assign_list">
-                            <li>
-                                <a href="http://www.samsungstf.org:8081" target="_blank">
-                                    <span class="ico rico1"></span>
-                                    <span class="text sok500">Science</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://www.samsungstf.org:8082" target="_blank">
-                                    <span class="ico rico2"></span>
-                                    <span class="text sok500">Technology</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--assign mypage-->
-
-                <!-- join -->
-
-                <div class="assign_wrap join">
-                    <div class="assign_boxc">
-                        <div class="clsbtn_r"></div>
-                        <div class="tit sok600">회원가입</div>
-                        <ul class="assign_list">
-                            <li>
-                                <a href="https://www.samsungstf.org:441/memb/user/agreement.do" target="_blank">
-                                    <span class="ico rico1"></span>
-                                    <span class="text sok500">Science</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.samsungstf.org:442/memb/user/agreement.do" target="_blank">
-                                    <span class="ico rico2"></span>
-                                    <span class="text sok500">Technology</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </header>
             <!--//header-->
 
             <!--inner contents-->
@@ -305,7 +232,7 @@
                                         <p>·&nbsp;형식과 절차적 행정업무 간소화</p>
                                     </div>
                                 </div>
-                        
+
                                 <div class="libox">
                                     <p class="tit"><span class="shp700">05</span>연구 성공을 위한<br />입체적 지원</p>
                                     <div class="desc sok400">
@@ -314,7 +241,6 @@
                                         <p>·&nbsp;연구자와 활발한 커뮤니케이션</p>
                                     </div>
                                 </div>
-                                    
                             </div>
                         </div>
                     </div>
@@ -406,7 +332,13 @@
                 }
 
                 //-- usage --//
-                preload('../images/sub/corp_bg_01.jpg', 'https://samsungstf.org/ssrfPr/mobile/images/sub/corp_bg_02.jpg', 'https://samsungstf.org/ssrfPr/mobile/images/sub/corp_bg_03.jpg', 'https://samsungstf.org/ssrfPr/mobile/images/sub/corp_bg_04.jpg', 'https://samsungstf.org/ssrfPr/mobile/images/sub/corp_bg_05.jpg');
+                preload(
+                    '../images/sub/corp_bg_01.jpg',
+                    'https://samsungstf.org/ssrfPr/mobile/images/sub/corp_bg_02.jpg',
+                    'https://samsungstf.org/ssrfPr/mobile/images/sub/corp_bg_03.jpg',
+                    'https://samsungstf.org/ssrfPr/mobile/images/sub/corp_bg_04.jpg',
+                    'https://samsungstf.org/ssrfPr/mobile/images/sub/corp_bg_05.jpg'
+                );
 
                 //slide setup
                 //#slide_init event
@@ -589,7 +521,7 @@
 
         <script type="text/javascript" src="https://samsungstf.org/ssrfPr/mobile/js/function.js"></script>
         <script type="text/javascript" src="https://samsungstf.org/ssrfPr/mobile/js/common.js"></script>
-        
+
         <%- include("./include/sub_footer.html") %>
 
         <div class="dimmed"></div>

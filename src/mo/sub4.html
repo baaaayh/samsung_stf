@@ -11,26 +11,19 @@
                 <div class="contact_hd_wrap">
                     <!--tab ui-->
                     <ul class="ui_tab sok400">
-                        <li class="active"><a href="./map01.do">삼성미래기술육성재단</a></li>
-                        <li><a href="./map02.do">삼성전자 미래기술육성센터</a></li>
+                        <li class="active">
+                            <a href="./map01.do">삼성미래기술<br />육성재단</a>
+                        </li>
+                        <li>
+                            <a href="./map02.do">삼성전자 미래기술<br />육성센터</a>
+                        </li>
                     </ul>
                     <!--//tab ui-->
 
                     <!--map-->
                     <div class="map_box org_type_a">
                         <div class="inner">
-                            <div class="object road" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
-                            <div class="object subway" style="opacity: 1"></div>
-                            <div class="object bd1" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
-                            <div class="object bd1_txt" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
-                            <div class="object bdm1" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
-                            <div class="object bdm1_txt" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
-                            <div class="object bdm2" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
-                            <div class="object bdm2_txt" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
-                            <div class="object bdm3" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
-                            <div class="object bdm3_txt" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
-                            <div class="object bdm4" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
-                            <div class="object bdm4_txt" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
+                            <div class="mapimg"></div>
                         </div>
                     </div>
                     <!--//map-->
@@ -60,8 +53,8 @@
                         <div class="traffic_method_info">
                             <p class="tit sok600">버스 이용 시</p>
                             <div class="info_detail">
-                                <p class="xt1 sok400">마을버스 서초 03번<br />간선버스 145번, 421번</p>
-                                <p class="xt2 sok300">강남역 정류장,<br />강남역 하나은행 정류장 하차</p>
+                                <p class="xt1 sok400">마을버스 서초 03번, 간선버스 145번, 421번</p>
+                                <p class="xt2 sok300">강남역 정류장, 강남역 하나은행 정류장 하차</p>
                             </div>
                         </div>
                         <div class="traffic_method_info">
@@ -108,7 +101,7 @@
                 <div class="searchbox_grid">
                     <form class="_searchForm" method="get" id="cmSearch" name="cmSearch" action="../cm/search.do" onsubmit="return cmSearchCheck()">
                         <div class="cm_search_type">
-                            <div class="opt lab_w185" style="margin-right: 25px">
+                            <div class="opt lab_w185">
                                 <select class="sok400" id="cmSearchCondition" name="cmSearchCondition" value="" onchange="searchCmType()">
                                     <option value="cmFaq">자주묻는 질문</option>
                                     <option value="cmIntro">소개</option>
@@ -141,7 +134,7 @@
                         </div>
                         <div class="searchbox" style="padding-top: 15px">
                             <div class="ipt cm_search">
-                                <input class="sok500" placeholder="검색어를 입력하세요." type="text" id="cmSearchKeyword" name="cmSearchKeyword" title="검색" />
+                                <input class="sok500" placeholder="검색어를 입력하세요." type="text" id="cmSearchKeyword" name="cmSearchKeyword" />
                             </div>
                             <div class="ipt_cancle">
                                 <a class="cancle" id="cmSearchCancle"></a>
@@ -226,8 +219,8 @@
 
         <!--//common search-->
 
-        <script src="https://samsungstf.org/ssrfPr/js/function.js"></script>
-        <script src="https://samsungstf.org/ssrfPr/js/common.js"></script>
+        <script type="text/javascript" src="https://samsungstf.org/ssrfPr/mobile/js/function.js"></script>
+        <script type="text/javascript" src="https://samsungstf.org/ssrfPr/mobile/js/common.js"></script>
 
         <%- include("./include/sub_footer.html") %>
 

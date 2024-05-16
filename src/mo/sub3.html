@@ -4,15 +4,6 @@
     <body>
         <!--wrapper.-->
         <div class="wrapper subpage">
-            <!--web accessibility -->
-            <div id="accessibility">
-                <h2 class="invisible">반복영역 건너뛰기</h2>
-                <a href="#gnb">메인메뉴 바로가기</a>
-                <a href="#contents">본문영역 바로가기</a>
-                <a href="#footer">푸터영역 바로가기</a>
-            </div>
-            <!--web accessibility -->
-
             <%- include("./include/sub_header.html") %>
 
             <!--inner contents-->
@@ -21,24 +12,19 @@
                 <div class="hdswrap">
                     <div class="hdsgrid">
                         <div class="titwrap vt_align subhds">
-                            <h1>공지사항</h1>
                             <p class="titm sok600">공지사항</p>
-                            <p class="tits sok400">콜럼버스의 신대륙 발견과 달걀 세우기를 누구나 할 수 있었을까요?<br />따라 하는 일은 누구나 할 수 있지만 앞서 처음하는 일은 쉽지 않습니다.<br />발상의 전환과 도전이 새로운 시대를 열어갑니다.</p>
                         </div>
                     </div>
 
                     <div class="object_grid">
-                        <div class="inner active" style="background-image: url('https://www.samsungstf.org/webfile2/subvisual/202003251355041__hd_bg04.jpg')"></div>
+                        <div class="inner news active" style="background-image: url('https://www.samsungstf.org/webfile2/subvisual/202002101429232__hd_bg04.jpg')"></div>
                     </div>
                 </div>
-
                 <!--//sub head-->
 
-                <div id="subLocation" class="">
+                <div id="subLocation">
                     <div class="location_box">
                         <ul class="location_list">
-                            <li class="home"><a href="/ssrfPr/main/main.do">main page</a></li>
-
                             <li class="depth1">
                                 <button type="button" class="sok400">공지사항</button>
 
@@ -90,7 +76,7 @@
                             <div class="search_filter">
                                 <div class="opt sch group">
                                     <select name="searchGubun" id="searchGubun" class="sok500">
-                                        <!--
+                                        <!--  
 	                <option value="all" >전체</option>
 	                <option value="A" >공지사항</option>
 	                <option value="B" >사업소식</option>
@@ -103,6 +89,36 @@
                                         <option value="A">주요일정</option>
                                         <option value="C" selected="">선정결과</option>
                                         <option value="G">경영공시</option>
+                                    </select>
+                                </div>
+
+                                <div class="opt sch month" style="display: none">
+                                    <select name="searchMonth" id="searchMonth" class="sok500">
+                                        <option value="">월</option>
+
+                                        <option value="01">01</option>
+
+                                        <option value="02">02</option>
+
+                                        <option value="03">03</option>
+
+                                        <option value="04">04</option>
+
+                                        <option value="05">05</option>
+
+                                        <option value="06">06</option>
+
+                                        <option value="07">07</option>
+
+                                        <option value="08">08</option>
+
+                                        <option value="09">09</option>
+
+                                        <option value="10">10</option>
+
+                                        <option value="11">11</option>
+
+                                        <option value="12">12</option>
                                     </select>
                                 </div>
 
@@ -141,36 +157,6 @@
                                         <option value="2010">2010</option>
                                     </select>
                                 </div>
-
-                                <div class="opt sch month" style="display: none">
-                                    <select name="searchMonth" id="searchMonth" class="sok500">
-                                        <option value="">월</option>
-
-                                        <option value="01">01</option>
-
-                                        <option value="02">02</option>
-
-                                        <option value="03">03</option>
-
-                                        <option value="04">04</option>
-
-                                        <option value="05">05</option>
-
-                                        <option value="06">06</option>
-
-                                        <option value="07">07</option>
-
-                                        <option value="08">08</option>
-
-                                        <option value="09">09</option>
-
-                                        <option value="10">10</option>
-
-                                        <option value="11">11</option>
-
-                                        <option value="12">12</option>
-                                    </select>
-                                </div>
                             </div>
                         </div>
                     </form>
@@ -188,7 +174,7 @@
                                     <div class="artc_box">
                                         <div class="vt_align">
                                             <div class="tit sok600">2024년 상반기 선정 과제</div>
-                                            <div class="desc sok400" style="word-break: break-all">
+                                            <div class="desc news sok400" style="word-break: break-all">
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -208,7 +194,7 @@
                                                 (광운대)
                                             </div>
 
-                                            <div class="addinfo">
+                                            <div class="addinfo news">
                                                 <span class="category sok400">
                                                     <!-- 과제선정 -->
                                                     선정결과
@@ -221,7 +207,7 @@
                             </a>
                         </div>
 
-                        <div class="list_array motion active">
+                        <div class="list_array motion">
                             <a href="./viewNewsroom.do?idx=833&amp;pageIndex=&amp;searchGubun=C&amp;searchYear=&amp;searchMonth=&amp;searchCondition=&amp;searchKeyword=" onclick="boardCntUp('833')">
                                 <div class="inner">
                                     <div class="thumbimg">
@@ -231,7 +217,7 @@
                                     <div class="artc_box">
                                         <div class="vt_align">
                                             <div class="tit sok600">2023년 하반기 선정 과제</div>
-                                            <div class="desc sok400" style="word-break: break-all">
+                                            <div class="desc news sok400" style="word-break: break-all">
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -250,7 +236,7 @@
                                                 이용한 고해상도 고색순도 나노박막 광발광 디스플레이 조창순 (포스텍) 뉴런으로 구성된 나노스케일 뉴럴프로브를 이용한 시냅스 기반 뇌-컴퓨터인터페이스 최영빈 (UNIST)
                                             </div>
 
-                                            <div class="addinfo">
+                                            <div class="addinfo news">
                                                 <span class="category sok400">
                                                     <!-- 과제선정 -->
                                                     선정결과
@@ -263,7 +249,7 @@
                             </a>
                         </div>
 
-                        <div class="list_array motion active">
+                        <div class="list_array motion">
                             <a href="./viewNewsroom.do?idx=832&amp;pageIndex=&amp;searchGubun=C&amp;searchYear=&amp;searchMonth=&amp;searchCondition=&amp;searchKeyword=" onclick="boardCntUp('832')">
                                 <div class="inner">
                                     <div class="thumbimg">
@@ -273,7 +259,7 @@
                                     <div class="artc_box">
                                         <div class="vt_align">
                                             <div class="tit sok600">2023년 상반기 선정 과제</div>
-                                            <div class="desc sok400" style="word-break: break-all">
+                                            <div class="desc news sok400" style="word-break: break-all">
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -288,7 +274,7 @@
                                                 구현 기술 임지우 (경희대) ICT 과제명 연구책임자 (소속) 다중 칩 연산 시스템을 위한 광대역 칩간 인터페이스 설계 기술 개발 김가인 (DGIST)
                                             </div>
 
-                                            <div class="addinfo">
+                                            <div class="addinfo news">
                                                 <span class="category sok400">
                                                     <!-- 과제선정 -->
                                                     선정결과
@@ -301,7 +287,7 @@
                             </a>
                         </div>
 
-                        <div class="list_array motion active">
+                        <div class="list_array motion">
                             <a href="./viewNewsroom.do?idx=807&amp;pageIndex=&amp;searchGubun=C&amp;searchYear=&amp;searchMonth=&amp;searchCondition=&amp;searchKeyword=" onclick="boardCntUp('807')">
                                 <div class="inner">
                                     <div class="thumbimg">
@@ -311,7 +297,7 @@
                                     <div class="artc_box">
                                         <div class="vt_align">
                                             <div class="tit sok600">2022년 하반기 선정 과제</div>
-                                            <div class="desc sok400" style="word-break: break-all">
+                                            <div class="desc news sok400" style="word-break: break-all">
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -330,7 +316,7 @@
                                                 거대산화저항 구현 정세영 (부산대) 고속 재밍 메커니즘 기반 모듈형 고강성 연속체 로봇 황동현 (KIST)
                                             </div>
 
-                                            <div class="addinfo">
+                                            <div class="addinfo news">
                                                 <span class="category sok400">
                                                     <!-- 과제선정 -->
                                                     선정결과
@@ -343,7 +329,7 @@
                             </a>
                         </div>
 
-                        <div class="list_array motion active">
+                        <div class="list_array motion">
                             <a href="./viewNewsroom.do?idx=729&amp;pageIndex=&amp;searchGubun=C&amp;searchYear=&amp;searchMonth=&amp;searchCondition=&amp;searchKeyword=" onclick="boardCntUp('729')">
                                 <div class="inner">
                                     <div class="thumbimg">
@@ -353,7 +339,7 @@
                                     <div class="artc_box">
                                         <div class="vt_align">
                                             <div class="tit sok600">2022년 상반기 선정 과제</div>
-                                            <div class="desc sok400" style="word-break: break-all">
+                                            <div class="desc news sok400" style="word-break: break-all">
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -374,7 +360,7 @@
                                                 자가배열 방식의 디스플레이 모듈 응용 유재수 (중앙대) 양자 네트워크를 위한 확장성 있는 반도체 기반 양자 중계기 이상윤 (GIST)
                                             </div>
 
-                                            <div class="addinfo">
+                                            <div class="addinfo news">
                                                 <span class="category sok400">
                                                     <!-- 과제선정 -->
                                                     선정결과
@@ -397,14 +383,14 @@
                                     <div class="artc_box">
                                         <div class="vt_align">
                                             <div class="tit sok600">삼성미래기술육성사업, 2021년 하반기 지원 과제 22개 선정</div>
-                                            <div class="desc sok400" style="word-break: break-all">
+                                            <div class="desc news sok400" style="word-break: break-all">
                                                 기초과학 분야 10개 172.7억 원, 소재 분야 6개 92억 원, ICT 분야 6개 76억 원 등 총 연구비 340.7억 원이 지원된다. ‘삼성미래기술육성사업’은 대한민국의 기초과학 발전과 세계적인 과학기술인 육성 등을 목표로, 삼성전자가 2013년부터&nbsp;1조 5천억 원을 지원해
                                                 시행하고 있는 공익 목적의 과학기술 연구지원 사업이다. △혁신적인 미래기술 창출과 주도를 위한 기초과학 분야 △제조업의 근간이며 미래기술 패러다임을 주도할 소재 분야△산업 고도화와 신시장 창출을 위한 ICT 분야 등에서 창의적이고 혁신적인 연구과제를 지원하고
                                                 있다. □ 과학적 난제 해결, 희귀질환 치료 기여 등 22개 연구 과제 신규 지원 ① 기초과학: 새로운 분야 개척, 질병 치료의 근원적 접근 등 연구 기초과학에서는 수리, 물리, 화학, 생명 분야에서 학술적으로 새로운 분야를 개척하거나 질병 치료의 근원적 접근
                                                 등&nbsp;파급 효과가 예상되는 과제를 포함해 총 10개가 선정됐다. 포스텍 생명과학과 김태경 교수는 ‘유전체 활동전위에 기반한 기억흔적의 추적 및 재구성’ 과제를 통해&nbsp;너무나 친숙하지만 여전히 미지의 영역인 ‘기억’에 대한 연구에 도전한다.
                                             </div>
 
-                                            <div class="addinfo">
+                                            <div class="addinfo news">
                                                 <span class="category sok400">
                                                     <!-- 과제선정 -->
                                                     선정결과
@@ -427,7 +413,7 @@
                                     <div class="artc_box">
                                         <div class="vt_align">
                                             <div class="tit sok600">2021년 2차 선정 과제 (기초과학, 소재, ICT)</div>
-                                            <div class="desc sok400" style="word-break: break-all">
+                                            <div class="desc news sok400" style="word-break: break-all">
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -447,7 +433,7 @@
                                                 플라즈모닉 CMOS 단일광자 센서 이명재 (KIST) 임베디드 메모리 성능 예측 및 최적 설계 자동 생성 인공지능 개발 정한울 (광운대) 실용적인 소프트웨어 검증을 위한 혁신적인 원천 기술 연구 허충길 (서울대)
                                             </div>
 
-                                            <div class="addinfo">
+                                            <div class="addinfo news">
                                                 <span class="category sok400">
                                                     <!-- 과제선정 -->
                                                     선정결과
@@ -470,14 +456,14 @@
                                     <div class="artc_box">
                                         <div class="vt_align">
                                             <div class="tit sok600">삼성미래기술육성사업, AI·암호 시스템 등 미래 유망기술 분야 연구 지원</div>
-                                            <div class="desc sok400" style="word-break: break-all">
+                                            <div class="desc news sok400" style="word-break: break-all">
                                                 삼성전자는 삼성미래기술육성사업 일환으로 2014년부터 국가적으로 연구가 필요한 미래 과학기술 분야 발전을 위해 지정테마 과제를 선정·지원하고 있다. 올해를 포함해 현재까지 총 103건의 연구 과제에1,059.3억 원을 지원했다. □ 올해, 어드밴스드 AI ·차세대 암호
                                                 시스템 분야 새롭게 선정 삼성전자는 올해 지정테마 연구지원 과제로 ▲어드밴스드 AI ▲차세대 암호 시스템 ▲B(Beyond)5G&amp;6G ▲로봇 ▲차세대 디스플레이 ▲반도체 소자 및 공정 등 총 6개 분야에서 12개를 선정했다. 이번 지정테마에는 ▲차세대 암호 시스템 ▲어드밴스드
                                                 AI가 새롭게 선정됐다. 삼성전자는 다양한 과학 기술 분야의 석학, 전문가들과 국가적 기술 개발의 필요성, 중장기 기술 발전 방향 등을 논의해 미래 유망 과학기술 분야를 지정테마로 선정하고 있다. 올해는 최종 6개 분야를 지정테마로 선정했고, 접수된 약 200건의
                                                 과제를 두달간 심사해 앞으로 지원할 12개 과제를 채택했다. ‘어드밴스드 AI’분야에서는 연세대학교 전기전자공학부 황도식 교수의 ‘순환 추론형 인공지능-자기 질의 응답 기반 자동 의료 진단 기술’ 등 총 2개 과제가 선정됐다.
                                             </div>
 
-                                            <div class="addinfo">
+                                            <div class="addinfo news">
                                                 <span class="category sok400">
                                                     <!-- 과제선정 -->
                                                     선정결과
@@ -500,7 +486,7 @@
                                     <div class="artc_box">
                                         <div class="vt_align">
                                             <div class="tit sok600">2021년 지정테마 선정 과제</div>
-                                            <div class="desc sok400" style="word-break: break-all">
+                                            <div class="desc news sok400" style="word-break: break-all">
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -519,7 +505,7 @@
                                                 (연세대) 차세대 암호 및 인증 시스템 과제명 연구책임자 (소속) 다자간 근사계산 암호 원천기술 개발 송용수 (서울대)
                                             </div>
 
-                                            <div class="addinfo">
+                                            <div class="addinfo news">
                                                 <span class="category sok400">
                                                     <!-- 과제선정 -->
                                                     선정결과
@@ -542,7 +528,7 @@
                                     <div class="artc_box">
                                         <div class="vt_align">
                                             <div class="tit sok600">2021년 상반기 ‘삼성미래기술육성사업’ 지원 과제 선정</div>
-                                            <div class="desc sok400" style="word-break: break-all">
+                                            <div class="desc news sok400" style="word-break: break-all">
                                                 이번에 선정된 과제는 기초과학 분야 13개, 소재 분야 7개, ICT 분야 7개 등 총 27개로 연구비 464억 원이 지원된다. AI 윤리와 난임과 같은 사회 문제 해결에 도움이 되고, 비접촉 생체전기 측정 등 삶의 질을 향상시킬 수 있는 과제가 다수 포함됐다. 삼성전자는 이번에
                                                 발표한 연구 과제를 포함해 지금까지 기초과학 분야 229개, 소재 분야 215개, ICT 분야 223개 등 총 667개 연구 과제에 8,644억 원의 연구비를 지원했다. □ 미래 신기술부터 삶의 질 향상에 기여하는 다양한 분야 27개 연구 과제 지원 &lt; 기초과학 &gt; 기초과학
                                                 분야에서는 독창적인 아이디어로 과제 성공시 세계 최초 또는 파급 효과가 클 것으로 기대되는 과제를 포함해 총 13개가 선정됐다. 서울대학교 수리과학부 류경석 교수는 머신러닝에 사용되고 있는 다양한 학습 모델의 공통점을 세계 최초로 수학적으로 규명하는 연구에
@@ -560,7 +546,7 @@
                                                 교수들(왼쪽부터 서울대학교 류경석 교수, 포스텍 황승준 교수, 서강대학교 조규봉 교수, 디지스트 조창의 교수, 서울대학교 김건희 교수, 충북대학교 김기웅 교수)
                                             </div>
 
-                                            <div class="addinfo">
+                                            <div class="addinfo news">
                                                 <span class="category sok400">
                                                     <!-- 과제선정 -->
                                                     선정결과
@@ -587,12 +573,15 @@
                                     <li onclick="javascript:pageGo('5')"><a>5</a></li>
                                 </ul>
 
-                                <a class="next_page" onclick="javascript:pageGo(5)"></a>
-                                <a class="end_page" onclick="javascript:pageGo(5)"></a>
+                                <div class="right_page">
+                                    <a class="end_page" onclick="javascript:pageGo(5)"></a>
+
+                                    <a class="next_page" onclick="javascript:pageGo(5)"></a>
+                                </div>
                             </div>
                         </div>
 
-                        <script>
+                        <script type="text/javascript">
                             function pageGo(cc_page) {
                                 if ('1' == cc_page) {
                                     return false;
@@ -644,7 +633,7 @@
                     <div class="searchbox_grid">
                         <form class="_searchForm" method="get" id="cmSearch" name="cmSearch" action="../cm/search.do" onsubmit="return cmSearchCheck()">
                             <div class="cm_search_type">
-                                <div class="opt lab_w185" style="margin-right: 25px">
+                                <div class="opt lab_w185">
                                     <select class="sok400" id="cmSearchCondition" name="cmSearchCondition" value="" onchange="searchCmType()">
                                         <option value="cmFaq">자주묻는 질문</option>
                                         <option value="cmIntro">소개</option>
@@ -677,7 +666,7 @@
                             </div>
                             <div class="searchbox" style="padding-top: 15px">
                                 <div class="ipt cm_search">
-                                    <input class="sok500" placeholder="검색어를 입력하세요." type="text" id="cmSearchKeyword" name="cmSearchKeyword" title="검색" />
+                                    <input class="sok500" placeholder="검색어를 입력하세요." type="text" id="cmSearchKeyword" name="cmSearchKeyword" />
                                 </div>
                                 <div class="ipt_cancle">
                                     <a class="cancle" id="cmSearchCancle"></a>
@@ -762,11 +751,10 @@
 
             <!--//common search-->
 
-            <script src="https://samsungstf.org/ssrfPr/js/function.js"></script>
-            <script src="https://samsungstf.org/ssrfPr/js/common.js"></script>
+            <script type="text/javascript" src="https://samsungstf.org/ssrfPr/mobile/js/function.js"></script>
+            <script type="text/javascript" src="https://samsungstf.org/ssrfPr/mobile/js/common.js"></script>
 
             <%- include("./include/sub_footer.html") %>
-
             <div class="dimmed"></div>
         </div>
     </body>

@@ -213,6 +213,9 @@
 .footer {
     height: auto;
     background-color: #fafafa;
+    &.sub {
+        background-color: #fafafa;
+    }
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -379,10 +382,10 @@
     }
 }
 
-.topbtn {
-    display: none;
-    visibility: hidden;
-}
+// .topbtn {
+//     display: none;
+//     visibility: hidden;
+// }
 
 /*cm_assign */
 .assign_wrap {
