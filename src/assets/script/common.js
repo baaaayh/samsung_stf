@@ -1,7 +1,7 @@
 $(function () {
     const $gnb = $('.gnb');
     const $gnbItems = $('.gnb__item');
-    const $depth2 = $('.depth2');
+    const $depth2 = $('.gnb .depth2');
     const $dim = $('.dim');
     const $familySiteBtn = $('.family-site button');
 
@@ -56,6 +56,18 @@ $(function () {
         },
     };
 
+    const refCheck = {
+        checkSharp(e) {
+            if ($(e.target).attr('href') === '#') {
+                e.preventDefault();
+            }
+        },
+        init() {
+            $('a').on('click', (e) => this.checkSharp(e));
+        },
+    };
+
+    refCheck.init();
     header.init();
     footer.init();
 });
