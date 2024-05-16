@@ -1,0 +1,772 @@
+<html lang="ko">
+    <%- include("./include/sub_head.html") %>
+    <body>
+        <!--wrapper.-->
+        <div class="wrapper subpage">
+            <!--web accessibility -->
+            <div id="accessibility">
+                <h2 class="invisible">반복영역 건너뛰기</h2>
+                <a href="#gnb">메인메뉴 바로가기</a>
+                <a href="#contents">본문영역 바로가기</a>
+                <a href="#footer">푸터영역 바로가기</a>
+            </div>
+            <!--web accessibility -->
+
+            <%- include("./include/sub_header.html") %>
+
+            <!--inner contents-->
+            <div class="wrapper_inner sub">
+                <!--sub head-->
+                <div class="hdswrap">
+                    <div class="hdsgrid">
+                        <div class="titwrap vt_align subhds">
+                            <h1>공지사항</h1>
+                            <p class="titm sok600">공지사항</p>
+                            <p class="tits sok400">콜럼버스의 신대륙 발견과 달걀 세우기를 누구나 할 수 있었을까요?<br />따라 하는 일은 누구나 할 수 있지만 앞서 처음하는 일은 쉽지 않습니다.<br />발상의 전환과 도전이 새로운 시대를 열어갑니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="object_grid">
+                        <div class="inner active" style="background-image: url('https://www.samsungstf.org/webfile2/subvisual/202003251355041__hd_bg04.jpg')"></div>
+                    </div>
+                </div>
+
+                <!--//sub head-->
+
+                <div id="subLocation" class="active">
+                    <div class="location_box active scr_up">
+                        <ul class="location_list">
+                            <li class="home"><a href="/ssrfPr/main/main.do">main page</a></li>
+
+                            <li class="depth1">
+                                <button type="button" class="sok400">공지사항</button>
+
+                                <ul class="under_depth sok400">
+                                    <li><a href="../intro/business.do">사업소개</a></li>
+                                    <li><a href="../program/basic.do">공모분야/과제응모</a></li>
+                                    <li><a href="../researcher/listResearcher.do">선정과제</a></li>
+                                    <li><a href="../newsroom/listNewsroom.do?searchGubun=A" class="active">공지사항</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="depth2">
+                                <button type="button" class="sok400">선정결과</button>
+
+                                <ul class="under_depth sok400">
+                                    <!-- <li><a href="../newsroom/listNewsroom.do?searchGubun=A" class="active">공지 & 뉴스</a></li>
+						      		<li><a href="../newsroom/listNewsletter.do">뉴스레터</a></li>
+						      		<li><a href="../newsroom/listLibrary.do">라이브러리</a></li> -->
+                                    <li><a href="../newsroom/listNewsroom.do?searchGubun=A">주요일정</a></li>
+                                    <li><a href="../newsroom/listNewsroom.do?searchGubun=C" class="active">선정결과</a></li>
+                                    <li><a href="../newsroom/listNewsroom.do?searchGubun=G">경영공시</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content_wrap">
+                    <!--search-->
+                    <form action="?" method="get" name="searchForm" id="searchForm">
+                        <input type="hidden" name="pageIndex" id="pageIndex" value="1" />
+
+                        <div class="search_grid">
+                            <div class="search_box">
+                                <div class="opt sch category">
+                                    <select name="searchCondition" id="searchCondition" class="sok500">
+                                        <option value="title">제목</option>
+                                        <option value="content">내용</option>
+                                        <option value="all">제목 + 내용</option>
+                                    </select>
+                                </div>
+
+                                <div class="ipt search">
+                                    <input class="sok400" placeholder="검색어를 입력해주세요." name="searchKeyword" value="" />
+                                    <button class="search"></button>
+                                </div>
+                            </div>
+
+                            <div class="search_filter">
+                                <div class="opt sch group">
+                                    <select name="searchGubun" id="searchGubun" class="sok500">
+                                        <!--
+	                <option value="all" >전체</option>
+	                <option value="A" >공지사항</option>
+	                <option value="B" >사업소식</option>
+	                <option value="C" selected>과제선정</option>
+	                <option value="D" >연구소식</option>
+	                <option value="E" >강연</option>
+	                <option value="F" >칼럼</option>
+	                <option value="G" >경영공시</option>
+	                -->
+                                        <option value="A">주요일정</option>
+                                        <option value="C" selected="">선정결과</option>
+                                        <option value="G">경영공시</option>
+                                    </select>
+                                </div>
+
+                                <div class="opt sch year">
+                                    <select name="searchYear" id="searchYear" class="sok500">
+                                        <option value="">연도</option>
+
+                                        <option value="2024">2024</option>
+
+                                        <option value="2023">2023</option>
+
+                                        <option value="2022">2022</option>
+
+                                        <option value="2021">2021</option>
+
+                                        <option value="2020">2020</option>
+
+                                        <option value="2019">2019</option>
+
+                                        <option value="2018">2018</option>
+
+                                        <option value="2017">2017</option>
+
+                                        <option value="2016">2016</option>
+
+                                        <option value="2015">2015</option>
+
+                                        <option value="2014">2014</option>
+
+                                        <option value="2013">2013</option>
+
+                                        <option value="2012">2012</option>
+
+                                        <option value="2011">2011</option>
+
+                                        <option value="2010">2010</option>
+                                    </select>
+                                </div>
+
+                                <div class="opt sch month" style="display: none">
+                                    <select name="searchMonth" id="searchMonth" class="sok500">
+                                        <option value="">월</option>
+
+                                        <option value="01">01</option>
+
+                                        <option value="02">02</option>
+
+                                        <option value="03">03</option>
+
+                                        <option value="04">04</option>
+
+                                        <option value="05">05</option>
+
+                                        <option value="06">06</option>
+
+                                        <option value="07">07</option>
+
+                                        <option value="08">08</option>
+
+                                        <option value="09">09</option>
+
+                                        <option value="10">10</option>
+
+                                        <option value="11">11</option>
+
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--//search-->
+
+                    <!--list-->
+                    <div class="list_grid research">
+                        <div class="list_array motion active">
+                            <a href="./viewNewsroom.do?idx=834&amp;pageIndex=&amp;searchGubun=C&amp;searchYear=&amp;searchMonth=&amp;searchCondition=&amp;searchKeyword=" onclick="boardCntUp('834')">
+                                <div class="inner">
+                                    <div class="thumbimg">
+                                        <img src="https://www.samsungstf.org/webfile2/newsroom/202404241012121__24-1.jpg" alt="24-1.jpg" />
+                                    </div>
+
+                                    <div class="artc_box">
+                                        <div class="vt_align">
+                                            <div class="tit sok600">2024년 상반기 선정 과제</div>
+                                            <div class="desc sok400" style="word-break: break-all">
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 기초과학 연구책임자 성명 가나다 順 과제명 연구책임자 (소속)
+                                                초파리 전뇌 커넥톰 기반 실행가능 in-silico 모델 개발 김안모 (한양대) 전자기장과 상호작용하는 2차원 양자 모델에 관한 수치해법 연구 김정호 (경희대) XFEL을 활용한 극초단 시간 스케일의 멀티 컬러 엑스선 분광 기술 김태규 (KAIST) “광자-유도 전기촉매” 반응을
+                                                통한 비대칭 유기합성법 개발 김현우 (포스텍) 고체물리 이론에 기반한 새로운 나노광소자 연구 박홍규 (서울대) 지속적 플로켓 소자를 이용한 비평형 응집물질 연구 이길호 (포스텍) 소재&nbsp; 과제명 연구책임자 (소속) 다중 특성 동시 제어 METEOR 도핑 기반
+                                                가시광통신용 초협대역 페로브스카이트 애벌랜치 광검출기 구현 강기훈 (서울대) 인공 스핀 나선 구조를 갖는 강자성체를 이용한 위상 인덕터 김상훈 (울산대) 직성장 집적기반 수직형 원자층 두께 채널 트랜지스터 모듈 공정 기술 서준기 (UNIST) 기능탈진 T 세포의
+                                                역분화를 통한 신규 T 세포 치료제 개발 임세진 (성균관대) 이온 교환을 이용한 비분해-지속형 산소발생 산화물 촉매 설계 정성윤 (KAIST) ICT 과제명 연구책임자 (소속) 초소형/초박형 Neural Nano 3D 스캐너 김인기 (성균관대) 디지털 트윈 기술 기반 뇌 모니터링을
+                                                위한 멀티 스케일 뇌 역학 모델 김현진 (KAIST) 스텔스파이버 및 조직공학기반 완전 생체융합형 신경 인터페이스 박성준 (KAIST) 클라우드 AI 서비스 프레임워크의 온실가스 배출량 제어 및 저감기술 연구 서의성 (성균관대) 소프트웨어 정의 매니코어 이재욱 (서울대)
+                                                웨어러블 초지능 가상비서: 주변상황과 뇌/생체신호의 동시 인식 및 지속 학습을 통한 인공지능 동반자 개발 임창환 (한양대) 겔 복제물 기반 저비용의 고해상도 대면적 공간 전사체 기술 정철희 (고려대) 고밀도 병렬 데이터 송수신 버스의 최적화 설계 연구 채주형
+                                                (광운대)
+                                            </div>
+
+                                            <div class="addinfo">
+                                                <span class="category sok400">
+                                                    <!-- 과제선정 -->
+                                                    선정결과
+                                                </span>
+                                                <span class="date sol400">2024-04-15</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="list_array motion active">
+                            <a href="./viewNewsroom.do?idx=833&amp;pageIndex=&amp;searchGubun=C&amp;searchYear=&amp;searchMonth=&amp;searchCondition=&amp;searchKeyword=" onclick="boardCntUp('833')">
+                                <div class="inner">
+                                    <div class="thumbimg">
+                                        <img src="https://www.samsungstf.org/webfile2/newsroom/202404240958011__23-2.jpg" alt="23-2.jpg" />
+                                    </div>
+
+                                    <div class="artc_box">
+                                        <div class="vt_align">
+                                            <div class="tit sok600">2023년 하반기 선정 과제</div>
+                                            <div class="desc sok400" style="word-break: break-all">
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Science&nbsp;연구책임자 성명 가나다 順 과제명 연구책임자 (소속)
+                                                실공간 액상전자현미경을 이용한 단백질 3차원 동적 구조 연구 박정원 (서울대) 착시윤곽선의 지각적 추론과 활동전위의 동기화 간 인과적 관계 규명 신혜영 (서울대) 콘도(스핀) 구름 응축을 이용한 새로운 양자 물질 연구 임현식 (동국대) 유도 대수기하와 스펙트럼
+                                                대수기하의 상호작용 조창연 (서강대) Lojasiewicz 정리와 변분방정식 점근에 관한 유일성 추측들 최범준 (포스텍) 반표준 극소모델 프로그램에 대하여 최성락 (연세대) 일반화된 대칭성 붕괴를 통한 액시온 도메인 벽 문제 해결 홍성우 (KAIST) Technology&nbsp; 과제명
+                                                연구책임자 (소속) 유압제어기반 리튬금속-전해질 계면 덴드라이트 메타모핑 곽노균 (한양대) 탄소 중립형 촉매 전극 개발: 상온/상압 탄소-탄소 결합반응 권태혁 (UNIST) 신경망 분해/통합 검증을 위한 원천 기술 연구 김지응 (인하대) 에지링크: 칩렛 인터페이스를 위한
+                                                시간 영역 고속 송수신기술 개발 김진태 (건국대) 생체 내 합성 뉴런 센싱 CAR 대식세포를 활용한 헌팅턴병 유전자 치료제 기술 개발 서형석 (서울대) 반데르발스 이중층의 미끄러짐 스위칭을 이용한 2차원 강유전체 메모리 개발 이관형 (서울대) 짧은 블록길이 환경에서
+                                                정보이론적 한계를 달성 할 수 있는 오류정정 부호 연구 정명수 (KAIST) 초거대 AI 가속을 위한 확장형 시스템 아키텍처 장재형 (연세대) 레귤로노쎄라피(Regulonotherapy) 개념 도입을 통한 생명기전조작 및 유전자치료제 개발 조용철 (DGIST) 플라스몬 트랜스퍼를
+                                                이용한 고해상도 고색순도 나노박막 광발광 디스플레이 조창순 (포스텍) 뉴런으로 구성된 나노스케일 뉴럴프로브를 이용한 시냅스 기반 뇌-컴퓨터인터페이스 최영빈 (UNIST)
+                                            </div>
+
+                                            <div class="addinfo">
+                                                <span class="category sok400">
+                                                    <!-- 과제선정 -->
+                                                    선정결과
+                                                </span>
+                                                <span class="date sol400">2023-10-09</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="list_array motion active">
+                            <a href="./viewNewsroom.do?idx=832&amp;pageIndex=&amp;searchGubun=C&amp;searchYear=&amp;searchMonth=&amp;searchCondition=&amp;searchKeyword=" onclick="boardCntUp('832')">
+                                <div class="inner">
+                                    <div class="thumbimg">
+                                        <img src="https://www.samsungstf.org/webfile2/newsroom/202404240934581__23-1.jpg" alt="23-1.jpg" />
+                                    </div>
+
+                                    <div class="artc_box">
+                                        <div class="vt_align">
+                                            <div class="tit sok600">2023년 상반기 선정 과제</div>
+                                            <div class="desc sok400" style="word-break: break-all">
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 기초과학 연구책임자 성명 가나다 順 과제명 연구책임자 (소속)
+                                                유전적 배경 노이즈에 의한 희귀질환 피놈 다형성 연구 최무림 (서울대) 소재&nbsp; 과제명 연구책임자 (소속) 당조절 마이크로바이옴 인식 스위치 고아라 (포스텍) 극자외선 광액화 레지스트: EUV-L2PR 이승우 (고려대) 차세대 전자부품용 초저유전, 고점착 고분자 소재
+                                                구현 기술 임지우 (경희대) ICT 과제명 연구책임자 (소속) 다중 칩 연산 시스템을 위한 광대역 칩간 인터페이스 설계 기술 개발 김가인 (DGIST)
+                                            </div>
+
+                                            <div class="addinfo">
+                                                <span class="category sok400">
+                                                    <!-- 과제선정 -->
+                                                    선정결과
+                                                </span>
+                                                <span class="date sol400">2023-04-10</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="list_array motion active">
+                            <a href="./viewNewsroom.do?idx=807&amp;pageIndex=&amp;searchGubun=C&amp;searchYear=&amp;searchMonth=&amp;searchCondition=&amp;searchKeyword=" onclick="boardCntUp('807')">
+                                <div class="inner">
+                                    <div class="thumbimg">
+                                        <img src="https://www.samsungstf.org/webfile2/newsroom/202210251429401__22-2차.jpg" alt="22-2차.jpg" />
+                                    </div>
+
+                                    <div class="artc_box">
+                                        <div class="vt_align">
+                                            <div class="tit sok600">2022년 하반기 선정 과제</div>
+                                            <div class="desc sok400" style="word-break: break-all">
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Science&nbsp;연구책임자 성명 가나다 順 과제명 연구책임자 (소속)
+                                                카펠-세너슨 4차원 호모토피 구들의 미분구조 분류 김민훈 (경북대) 마그논 오비트로닉스 김세권 (KAIST) 폴라리톤 보즈-아인슈타인 응축을 이용한 위상 양자컴퓨팅 연구 김윤호 (포스텍) 로그 상관관계 장의 보편성 남경식 (KAIST) 구성공간의 호모토피 불변량 안병희
+                                                (경북대) 자가 면역 T 세포 클론의 형성과 분화 연구 이유정 (서울대) 초염기 기반 키랄성 리간드의 설계와 응용: 고산화수 전이금속 촉매반응 연구 이윤미 (연세대) 막단백질 연구를 위한 ‘살아있는 양쪽성 분자’의 설계 및 개발 채필석 (한양대 ERICA) 식물 교차 최대화
+                                                연구 최규하 (포스텍) Technology&nbsp; 과제명 연구책임자 (소속) STRIC 기술: 항체-페이로드 복합체 기반 면역항암제의 시공간적 활성 제어 기술 김은하 (아주대) 고효율 벌크 열정류 기술 백승현 (성균관대) 안전하고 성능도 좋은 리튬금속 반고체전지를 위한 LPPS
+                                                전해질 송승완 (충남대) 전기차 배터리 열화속도 완화용 기계학습 기반 완전충전 지연 BMS 알고리듬 송주현 (KENTECH) 프로테아좀을 매개하는 신개념 표적단백질 분해기술 개발 이민재 (서울대) 용매화 껍질 재구성을 통해 리튬이온 이동이 커플링된 혼성전해질 및 이를
+                                                이용한 반고체전지 이상영 (연세대) 음향 나노 핀셋 기반 암 치료용 표적형 나노 약물 전달 시스템 개발 임해균 (부경대) 외부 자극에 능동적 반응과 운동성을 지닌 표적 타겟팅 아데노부속바이러스(AAV) 벡터 발굴 장재형 (연세대) 산소 자체 패시배이션을 통한 금속표면
+                                                거대산화저항 구현 정세영 (부산대) 고속 재밍 메커니즘 기반 모듈형 고강성 연속체 로봇 황동현 (KIST)
+                                            </div>
+
+                                            <div class="addinfo">
+                                                <span class="category sok400">
+                                                    <!-- 과제선정 -->
+                                                    선정결과
+                                                </span>
+                                                <span class="date sol400">2022-10-25</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="list_array motion active">
+                            <a href="./viewNewsroom.do?idx=729&amp;pageIndex=&amp;searchGubun=C&amp;searchYear=&amp;searchMonth=&amp;searchCondition=&amp;searchKeyword=" onclick="boardCntUp('729')">
+                                <div class="inner">
+                                    <div class="thumbimg">
+                                        <img src="https://www.samsungstf.org/webfile2/newsroom/202204050946321__22-1h.png" alt="22-1h.png" />
+                                    </div>
+
+                                    <div class="artc_box">
+                                        <div class="vt_align">
+                                            <div class="tit sok600">2022년 상반기 선정 과제</div>
+                                            <div class="desc sok400" style="word-break: break-all">
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 기초과학 연구책임자 성명 가나다 順 과제명 연구책임자 (소속) 연쇄
+                                                노화 전이를 조절하는 노화연관 대사체 연구 강찬희 (서울대) 차세대 고온초전도체 발굴 김범준 (포스텍) 거꾸로 가는 식물의 인생 시계 : 식물의 재유년화 서필준 (서울대) 게놈 3 차구조 규명을 위한 이미징-시퀀싱 융합 심상희 (고려대) 3 차원 계면 및 계면 동역학의
+                                                단일 원자 단위 규명 양용수 (KAIST) 조직의 특성에 따른 조직상주 기억 B 세포의 분포에 대한 연구 오지은 (KAIST) 음곡률을 가진 캘러다양체의 균일화를 위한 연구 이강혁 (경상대) 연속체 우주암흑물질 이승준 (고려대) 함수 공간의 그래프 노름과 반사군 이준경
+                                                (한양대) 차세대 근접분자 표지화학 연구 이현우 (서울대) 교세포에 의한 새로운 감각정보 구성 기전 연구 정은지 (연세대) 비선형 대칭을 가진 디오판토스 문제들의 해석학 황준호 (서울대) 소재&nbsp; 과제명 연구책임자 (소속) 강상관 위상 결함 함유 나노 유기 격자
+                                                구현 및 이의 포논 국소화 제어 소재로의 활용 권석준 (성균관대) 영하 20 ℃에서 고성능을 내는 전고체전지용 엘라스토머 전해질 개발 김범준 (KAIST) 위상마디선 제어 고성능 자성 반도체 소재 및 소자 개발 김준성 (포스텍) 대상염기서열 맞춤형 유전자가위 단백질의
+                                                기계 학습 기반 신규 설계 기술 개발 김희권 (성균관대) 리튬금속전지용 덴드라이트-프리 유기 얼음 전해질 ICE 송현곤 (UNIST) 리보솜을 이용한 시험관내 거울상단백질 합성 윤형돈 (건국대) 이온 근접 유도 기반 초유연 전도성 콜로이드 단위소재 개발 최시영 (KAIST)
+                                                RNA 백신 치료제 대량 생산을 위한 분자정제기술 개발 최영재 (GIST) ICT 과제명 연구책임자 (소속) Rust 기반 시스템 설계와 안전성 검증을 통한 bug-free 가상화 시스템 권영진 (KAIST) 6G 및 양자 컴퓨팅 어플리케이션을 위한 THz 속도의 트랜지스터 개발 김대현
+                                                (경북대) 3D dPCR 김도현 (명지대) 순환 표현 및 무작위성 규제에 기반한 위상 홀로그램 생성 및 압축 부호화 김휘용 (경희대) 글림패틱시스템의 노폐물 처리기능 향상을 위한 뇌청소기: 초음파브레인스위퍼 박진형 (성균관대) 웨이브믹싱을 이용한 마이크로 소자의
+                                                자가배열 방식의 디스플레이 모듈 응용 유재수 (중앙대) 양자 네트워크를 위한 확장성 있는 반도체 기반 양자 중계기 이상윤 (GIST)
+                                            </div>
+
+                                            <div class="addinfo">
+                                                <span class="category sok400">
+                                                    <!-- 과제선정 -->
+                                                    선정결과
+                                                </span>
+                                                <span class="date sol400">2022-04-05</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="list_array motion">
+                            <a href="https://bit.ly/3FsV1AJ" target="_blank" onclick="boardCntUp('657')">
+                                <div class="inner">
+                                    <div class="thumbimg">
+                                        <img src="https://www.samsungstf.org/webfile2/newsroom/202111221741281__8.-삼성미래기술육성사업-2021년-하반기-지원과제-선정-교수진-2.jpg" alt="8.-삼성미래기술육성사업-2021년-하반기-지원과제-선정-교수진-2.jpg" />
+                                    </div>
+
+                                    <div class="artc_box">
+                                        <div class="vt_align">
+                                            <div class="tit sok600">삼성미래기술육성사업, 2021년 하반기 지원 과제 22개 선정</div>
+                                            <div class="desc sok400" style="word-break: break-all">
+                                                기초과학 분야 10개 172.7억 원, 소재 분야 6개 92억 원, ICT 분야 6개 76억 원 등 총 연구비 340.7억 원이 지원된다. ‘삼성미래기술육성사업’은 대한민국의 기초과학 발전과 세계적인 과학기술인 육성 등을 목표로, 삼성전자가 2013년부터&nbsp;1조 5천억 원을 지원해
+                                                시행하고 있는 공익 목적의 과학기술 연구지원 사업이다. △혁신적인 미래기술 창출과 주도를 위한 기초과학 분야 △제조업의 근간이며 미래기술 패러다임을 주도할 소재 분야△산업 고도화와 신시장 창출을 위한 ICT 분야 등에서 창의적이고 혁신적인 연구과제를 지원하고
+                                                있다. □ 과학적 난제 해결, 희귀질환 치료 기여 등 22개 연구 과제 신규 지원 ① 기초과학: 새로운 분야 개척, 질병 치료의 근원적 접근 등 연구 기초과학에서는 수리, 물리, 화학, 생명 분야에서 학술적으로 새로운 분야를 개척하거나 질병 치료의 근원적 접근
+                                                등&nbsp;파급 효과가 예상되는 과제를 포함해 총 10개가 선정됐다. 포스텍 생명과학과 김태경 교수는 ‘유전체 활동전위에 기반한 기억흔적의 추적 및 재구성’ 과제를 통해&nbsp;너무나 친숙하지만 여전히 미지의 영역인 ‘기억’에 대한 연구에 도전한다.
+                                            </div>
+
+                                            <div class="addinfo">
+                                                <span class="category sok400">
+                                                    <!-- 과제선정 -->
+                                                    선정결과
+                                                </span>
+                                                <span class="date sol400">2021-10-11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="list_array motion">
+                            <a href="./viewNewsroom.do?idx=633&amp;pageIndex=&amp;searchGubun=C&amp;searchYear=&amp;searchMonth=&amp;searchCondition=&amp;searchKeyword=" onclick="boardCntUp('633')">
+                                <div class="inner">
+                                    <div class="thumbimg">
+                                        <img src="https://www.samsungstf.org/webfile2/newsroom/202110041335051__21-2차.jpg" alt="21-2차.jpg" />
+                                    </div>
+
+                                    <div class="artc_box">
+                                        <div class="vt_align">
+                                            <div class="tit sok600">2021년 2차 선정 과제 (기초과학, 소재, ICT)</div>
+                                            <div class="desc sok400" style="word-break: break-all">
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 기초과학 연구책임자 성명 가나다 順 과제명 연구책임자 (소속)
+                                                압축성 오일러 시스템에 관한 리만 문제의 유일성과 안정성 연구 강문진 (KAIST) 단백질 아르기닌 인산화의 화학생물학적 연구 기정민 (UNIST) 단일세포 타임스탬프 리코딩 및 경로추적 기술을 통한 질병 세포의 모든 운명 경로 수정 김익수 (가천대) 양자 키메라
+                                                초전도체 김재훈 (연세대) 유전체 활동전위에 기반한 기억흔적의 추적 및 재구성 김태경 (포스텍) 1nm3 양자터널 캐비티-스펙트로스코피를 이용한 엑시톤 거동 능동제어 박경덕 (UNIST) 4차원 위상수학과 곡면 특이점 박정환 (KAIST) 특이 및 비축약 스킴의 모티빅
+                                                코호몰로지에 대하여 박진현 (KAIST) 인간 배아 초기 발생부터 배반포 세포의 온몸 운명 재구성 연구 오지원 (경북대) 원자 전달 반응 기반의 탄소-불소 시그마 결합 활성화 이홍근 (서울대) 소재&nbsp; 과제명 연구책임자 (소속) 유전자 치료를 위한 RNA 스위치 발굴
+                                                김진국 (KAIST) 양이온성 고분자 화합물 소재 기반 자연살해세포의 고형암 표적 항암기능강화 기술 개발 박경순 (차의과대) 포논 투과 스펙트럼 측정을 통한 계면 열 기능성 연구 및 제어 소자 개발 이종석 (GIST) 트리플 합성치사를 이용한 효과적인 면역항암 병용치료법
+                                                개발 이주상 (성균관대) 반쪽 금속 반강자성체 기반의 자기시냅스 소자 이창구 (성균관대) 특이활성 계면전도를 통한 고이온전도성 고전압안정성 할라이드계 나노복합체 고체전해질 기반 전고체전지 정윤석 (연세대) ICT 과제명 연구책임자 (소속) 4D 시-촉각 동시 동기화
+                                                구현을 위한 비접촉식 햅틱 피드백 투명 패널 기술 경기욱 (KAIST) 초가속 전자를 이용한 고출력 RF 증폭기 공병돈 (포스텍) 초음파/광음향 영상을 위한 실리콘 포토닉스 플랫폼 기반의 고민감도, 광대역 센서 어레이 개발 유재석 (DGIST) 1550nm 라이다를 위한
+                                                플라즈모닉 CMOS 단일광자 센서 이명재 (KIST) 임베디드 메모리 성능 예측 및 최적 설계 자동 생성 인공지능 개발 정한울 (광운대) 실용적인 소프트웨어 검증을 위한 혁신적인 원천 기술 연구 허충길 (서울대)
+                                            </div>
+
+                                            <div class="addinfo">
+                                                <span class="category sok400">
+                                                    <!-- 과제선정 -->
+                                                    선정결과
+                                                </span>
+                                                <span class="date sol400">2021-10-11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="list_array motion">
+                            <a href="https://bit.ly/36BevDd" target="_blank" onclick="boardCntUp('634')">
+                                <div class="inner">
+                                    <div class="thumbimg">
+                                        <img src="https://www.samsungstf.org/webfile2/newsroom/202110041514201__210715_nsrm.jpg" alt="210715_nsrm.jpg" />
+                                    </div>
+
+                                    <div class="artc_box">
+                                        <div class="vt_align">
+                                            <div class="tit sok600">삼성미래기술육성사업, AI·암호 시스템 등 미래 유망기술 분야 연구 지원</div>
+                                            <div class="desc sok400" style="word-break: break-all">
+                                                삼성전자는 삼성미래기술육성사업 일환으로 2014년부터 국가적으로 연구가 필요한 미래 과학기술 분야 발전을 위해 지정테마 과제를 선정·지원하고 있다. 올해를 포함해 현재까지 총 103건의 연구 과제에1,059.3억 원을 지원했다. □ 올해, 어드밴스드 AI ·차세대 암호
+                                                시스템 분야 새롭게 선정 삼성전자는 올해 지정테마 연구지원 과제로 ▲어드밴스드 AI ▲차세대 암호 시스템 ▲B(Beyond)5G&amp;6G ▲로봇 ▲차세대 디스플레이 ▲반도체 소자 및 공정 등 총 6개 분야에서 12개를 선정했다. 이번 지정테마에는 ▲차세대 암호 시스템 ▲어드밴스드
+                                                AI가 새롭게 선정됐다. 삼성전자는 다양한 과학 기술 분야의 석학, 전문가들과 국가적 기술 개발의 필요성, 중장기 기술 발전 방향 등을 논의해 미래 유망 과학기술 분야를 지정테마로 선정하고 있다. 올해는 최종 6개 분야를 지정테마로 선정했고, 접수된 약 200건의
+                                                과제를 두달간 심사해 앞으로 지원할 12개 과제를 채택했다. ‘어드밴스드 AI’분야에서는 연세대학교 전기전자공학부 황도식 교수의 ‘순환 추론형 인공지능-자기 질의 응답 기반 자동 의료 진단 기술’ 등 총 2개 과제가 선정됐다.
+                                            </div>
+
+                                            <div class="addinfo">
+                                                <span class="category sok400">
+                                                    <!-- 과제선정 -->
+                                                    선정결과
+                                                </span>
+                                                <span class="date sol400">2021-07-15</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="list_array motion">
+                            <a href="./viewNewsroom.do?idx=606&amp;pageIndex=&amp;searchGubun=C&amp;searchYear=&amp;searchMonth=&amp;searchCondition=&amp;searchKeyword=" onclick="boardCntUp('606')">
+                                <div class="inner">
+                                    <div class="thumbimg">
+                                        <img src="https://www.samsungstf.org/webfile2/newsroom/202107081843101__2021_지정테마.jpg" alt="2021_지정테마.jpg" />
+                                    </div>
+
+                                    <div class="artc_box">
+                                        <div class="vt_align">
+                                            <div class="tit sok600">2021년 지정테마 선정 과제</div>
+                                            <div class="desc sok400" style="word-break: break-all">
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Disruptive 반도체 소자 및 공정 기술 연구책임자 성명 가나다 順
+                                                과제명 연구책임자 (소속) 초고집적 3차원 1T-DRAM을 위한 inner metal이 채널 전면을 둘러싼 tri-gate FeFET 권대웅 (인하대) 하나의 강유전체 트랜지스터를 이용하고 데이터 일치도 평가가 가능한 다중비트 내용 주소화 기억장치의 개발 최우영 (서강대) 차세대 Display
+                                                과제명 연구책임자 (소속) 친환경 청색 페로브스카이트 발광체 기반 적층형 자발광 디스플레이 소자 개발 박민호 (숭실대) 결함 제어를 통한 신규 비납계 유사 페로브스카이트 청색 소재 및 LED 소자 응용 임원빈 (한양대) 초고 PPI 디스플레이향 트랜지스터 소자의
+                                                In-line 모니터링을 위한 결함 이미징 기술 개발 정권범 (동국대) 파장 조절이 가능한 Perovskite 나노결정 기반 화소 배열형 Chiral Laser 기술 연구 최수석 (포스텍) Beyond 5G / 6G Communications 과제명 연구책임자 (소속) 6G 통신시스템의 Cell-Free 네트워크에서
+                                                유저 중심의 데이터 커버리지 형성을 위한 지능형 Medium-Access Control 개발 조성현 (한양대) Sub-THz 통신용 자가 조정 가능 일체형 능동 전자 표면 원천 기술 홍원빈 (포스텍) Robot 과제명 연구책임자 (소속) 동적 질량중심을 가지며 변형 가능한 물체를 인간
+                                                수준으로 조작하기 위한 시-촉각 인식 기술 김민구 (인하대) Advanced AI 과제명 연구책임자 (소속) 순차적 조립 능력을 갖춘 조합적 설계 신경망을 통한 3 차원 물체 생성 연구 조민수 (포스텍) 순환 추론형 인공지능: 자기 질의 응답 기반 자동 의료 진단 기술 황도식
+                                                (연세대) 차세대 암호 및 인증 시스템 과제명 연구책임자 (소속) 다자간 근사계산 암호 원천기술 개발 송용수 (서울대)
+                                            </div>
+
+                                            <div class="addinfo">
+                                                <span class="category sok400">
+                                                    <!-- 과제선정 -->
+                                                    선정결과
+                                                </span>
+                                                <span class="date sol400">2021-07-15</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="list_array motion">
+                            <a href="https://bit.ly/3sSesw7" target="_blank" onclick="boardCntUp('530')">
+                                <div class="inner">
+                                    <div class="thumbimg">
+                                        <img src="https://www.samsungstf.org/webfile2/newsroom/202104051200231__2101_newsroom_sec.png" alt="2101_newsroom_sec.png" />
+                                    </div>
+
+                                    <div class="artc_box">
+                                        <div class="vt_align">
+                                            <div class="tit sok600">2021년 상반기 ‘삼성미래기술육성사업’ 지원 과제 선정</div>
+                                            <div class="desc sok400" style="word-break: break-all">
+                                                이번에 선정된 과제는 기초과학 분야 13개, 소재 분야 7개, ICT 분야 7개 등 총 27개로 연구비 464억 원이 지원된다. AI 윤리와 난임과 같은 사회 문제 해결에 도움이 되고, 비접촉 생체전기 측정 등 삶의 질을 향상시킬 수 있는 과제가 다수 포함됐다. 삼성전자는 이번에
+                                                발표한 연구 과제를 포함해 지금까지 기초과학 분야 229개, 소재 분야 215개, ICT 분야 223개 등 총 667개 연구 과제에 8,644억 원의 연구비를 지원했다. □ 미래 신기술부터 삶의 질 향상에 기여하는 다양한 분야 27개 연구 과제 지원 &lt; 기초과학 &gt; 기초과학
+                                                분야에서는 독창적인 아이디어로 과제 성공시 세계 최초 또는 파급 효과가 클 것으로 기대되는 과제를 포함해 총 13개가 선정됐다. 서울대학교 수리과학부 류경석 교수는 머신러닝에 사용되고 있는 다양한 학습 모델의 공통점을 세계 최초로 수학적으로 규명하는 연구에
+                                                도전한다. 이를 활용하면 인공지능이 다양한 학습 모델을 습득할 수 있는 능력을 획기적으로 향상시킬 수 있다. 포스텍 화학과 황승준 교수는 왕관 모양으로 생겨 크라운 에테르(crown ether)라 부르는 분자를 화학 촉매에 사용해 물질 변환 효율을 획기적으로 향상시킬
+                                                계획이다. 크라운 에테르 분자로 인해 생성된 국소 전기장(local electric field)을 활용해 지구온난화의 원인인 이산화탄소 분해 등 난제를 해결하는데 기여할 것으로 전망된다. &lt; 소재 &gt; 소재 분야에서는 DNA 염기서열 해독, 양자 광원 등 폭넓은 연구 분야에서
+                                                7개 과제를 지원한다. 서강대학교 화학과 조규봉 교수는 인간 게놈 프로젝트를 통해서도 여전히 밝혀지지 않은 Y염색체 DNA 서열을 완전히 해독하는 연구를 수행한다. 이번 과제는 남성 불임 등 Y 염색체 관련 난임 질환 연구와 유전자 맞춤형 의료 분야에 기여할 것으로
+                                                기대된다. 디지스트(DGIST) 신물질과학전공 조창희 교수는 양자통신용 광원(光源) 기술을 개발한다. 페로브스카이트 소재의 결정 구조를 조절해 극저온에서만 구동하는 양자통신용 광원을 상온에서 구현하고자 하는 과제다. 유지가 어려운 극저온 상황을 뛰어넘어 상온
+                                                양자암호통신 분야 상용화를 앞당길 수 있는 연구로 예상된다. &lt; ICT &gt; ICT 분야에서는 인공지능, 비접촉 생체 전기신호 측정 등 미래 산업 경쟁력 강화를 위한 핵심 기술 연구 분야에서 7개 과제가 선정됐다. 서울대학교 컴퓨터공학부 김건희 교수는 AI 기술
+                                                발전에 따라 발생할 수 있는 개인정보 침해, 성별 등에 대한 편향, 사실 관계 오류 등의 문제를 해결하기 위해 나선다. 이 연구를 통해 사회 규범을 준수하고 신뢰할 수 있는 AI가 개발될 것으로 전망된다. 충북대학교 전산학부 김기웅 교수는 심전도, 뇌전도 등 생체에서
+                                                발생하는 전기 신호를 비접촉 방식으로 측정할 수 있는 기술을 개발할 예정이다. 이 기술은 환자 상태 관찰, 운전자 모니터링 등 의료 분야에 유용하게 활용될 것으로 예상된다. □ 2013년 1조 5천억 원 출연해 과학 기술 분야 연구 지원 ‘삼성미래기술육성사업’은
+                                                우리나라의 미래를 책임질 과학기술 육성·지원을 목표로 삼성전자가 2013년부터 1조 5천억 원을 출연해 시행하고 있는 연구 지원 공익사업이다. 매년 상·하반기에 각각 기초과학, 소재, ICT 분야에서 지원할 과제를 선정하고 1년에 한 번 실시하는 ‘지정테마 과제 공모’를
+                                                통해 국가적으로 필요한 미래기술 분야를 지정해 해당 연구를 지원하고 있다. 연구 책임자가 연구 성과와 주요 이슈를 설명하고, 참석 연구자들과의 토론을 통해 새로운 아이디어를 얻는 ‘애뉴얼 포럼’, 연구 성과의 산업 활용도를 높이기 위한 R&amp;D 교류회, 활용도가
+                                                높은 특허 출원을 지원하는 IP멘토링 등 다양한 프로그램도 운영하고 있다. 한편, 올해 ‘지정테마 과제 공모’는 이번 달 16일까지 진행될 예정이며, 공모 세부 사항은 삼성미래기술육성사업 홈페이지(http://www.samsungstf.org/)에서 확인할 수 있다. 삼성전자는 CSR
+                                                비전 ‘함께가요 미래로! Enabling People’ 아래 삼성미래기술육성사업, 스마트공장, C랩 아웃사이드, 협력회사 상생·물대 펀드 등 다양한 상생 활동과 청소년 교육 사회공헌 활동을 펼치고 있다. ▲ 2021년 상반기 ‘삼성미래기술육성사업’ 지원 과제에 선정된
+                                                교수들(왼쪽부터 서울대학교 류경석 교수, 포스텍 황승준 교수, 서강대학교 조규봉 교수, 디지스트 조창의 교수, 서울대학교 김건희 교수, 충북대학교 김기웅 교수)
+                                            </div>
+
+                                            <div class="addinfo">
+                                                <span class="category sok400">
+                                                    <!-- 과제선정 -->
+                                                    선정결과
+                                                </span>
+                                                <span class="date sol400">2021-04-05</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--//list-->
+
+                        <!-- pageBtn -->
+                        <!-- 웹 페이징 처리 -->
+                        <div class="cm_pagenation_wrap">
+                            <div class="cm_pagenation">
+                                <ul class="num_page">
+                                    <li class="active" onclick="javascript:pageGo('1')"><a>1</a></li>
+                                    <li onclick="javascript:pageGo('2')"><a>2</a></li>
+                                    <li onclick="javascript:pageGo('3')"><a>3</a></li>
+                                    <li onclick="javascript:pageGo('4')"><a>4</a></li>
+                                    <li onclick="javascript:pageGo('5')"><a>5</a></li>
+                                </ul>
+
+                                <a class="next_page" onclick="javascript:pageGo(5)"></a>
+                                <a class="end_page" onclick="javascript:pageGo(5)"></a>
+                            </div>
+                        </div>
+
+                        <script>
+                            function pageGo(cc_page) {
+                                if ('1' == cc_page) {
+                                    return false;
+                                }
+                                if (cc_page == null || cc_page == '') {
+                                    return false;
+                                }
+                                $('#pageIndex').val(cc_page);
+                                $('#loading').show();
+                                document.searchForm.submit();
+                            }
+                        </script>
+
+                        <!-- //pageBtn -->
+                    </div>
+                </div>
+                <!--//inner contents-->
+            </div>
+            <!--wrapper.-->
+
+            <!--If you use the script on this page, please put it here -->
+
+            <script>
+                $(document).ready(function () {
+                    $('.list_array:eq(0)').addClass('active');
+                });
+
+                function boardCntUp(idx) {
+                    $.ajax({
+                        url: './boardCntUp.do',
+                        type: 'POST',
+                        async: false,
+                        data: { idx: idx },
+                        success: function (data) {},
+                        error: function (msg) {
+                            console.log('error ' + msg);
+                        },
+                    });
+                }
+            </script>
+
+            <!--//-->
+
+            <!--common search-->
+            <div class="cm_search_wrap">
+                <div class="inner">
+                    <div class="clsBtn"></div>
+
+                    <div class="searchbox_grid">
+                        <form class="_searchForm" method="get" id="cmSearch" name="cmSearch" action="../cm/search.do" onsubmit="return cmSearchCheck()">
+                            <div class="cm_search_type">
+                                <div class="opt lab_w185" style="margin-right: 25px">
+                                    <select class="sok400" id="cmSearchCondition" name="cmSearchCondition" value="" onchange="searchCmType()">
+                                        <option value="cmFaq">자주묻는 질문</option>
+                                        <option value="cmIntro">소개</option>
+                                        <option value="cmNewsroom">뉴스</option>
+                                        <option value="cmProgram">프로그램</option>
+                                        <option value="cmResearcher">과제&amp;연구자</option>
+                                        <option value="cmProjectContent">연구내용</option>
+                                    </select>
+                                </div>
+                                <div id="toggleCmSearchType" style="display: none">
+                                    <div class="opt lab_w185">
+                                        <select class="sok400" id="cmsearchType" name="cmsearchType" value="">
+                                            <option value="researcherName">연구자</option>
+                                            <option value="projectName">연구제목</option>
+                                            <option value="program">연구분야</option>
+                                            <option value="researchBelong">소속기관</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="toggleCmSearchProgramType" style="display: none">
+                                    <div class="opt lab_w185">
+                                        <select class="sok400" id="cmsearchProgramType" name="cmsearchProgramType" value="">
+                                            <option value="1">기초과학</option>
+                                            <option value="2">소재</option>
+                                            <option value="3">ICT</option>
+                                            <option value="4">지정테마</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="searchbox" style="padding-top: 15px">
+                                <div class="ipt cm_search">
+                                    <input class="sok500" placeholder="검색어를 입력하세요." type="text" id="cmSearchKeyword" name="cmSearchKeyword" title="검색" />
+                                </div>
+                                <div class="ipt_cancle">
+                                    <a class="cancle" id="cmSearchCancle"></a>
+                                </div>
+
+                                <div class="ipt_submit">
+                                    <button type="submit" class="search_submit"></button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="linkbox">
+                            <p class="tit sok600">링크 바로가기</p>
+                            <ul class="linkbox_wrap">
+                                <li><a href="../intro/listFaq.do" title="자주묻는 질문" target="_self">자주묻는 질문</a></li>
+                                <li><a href="../cm/map01.do" title="찾아오시는 길" target="_self">찾아오시는 길</a></li>
+                                <!-- <li><a href="../intro/writeQna.do" title ="1:1문의" target="_self">1:1문의</a></li> -->
+                                <li><a href="../intro/business.do" title="사회공헌사업" target="_self">사회공헌사업</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function searchCmType() {
+                    var cmSearchCondition = document.getElementById('cmSearchCondition');
+                    var toggleCmSearchType = document.getElementById('toggleCmSearchType');
+                    var toggleCmSearchProgramType = document.getElementById('toggleCmSearchProgramType');
+
+                    var cmsearchType = document.getElementById('cmsearchType');
+                    var cmsearchProgramType = document.getElementById('cmsearchProgramType');
+
+                    if (cmSearchCondition.options[cmSearchCondition.selectedIndex].value == 'cmResearcher') {
+                        toggleCmSearchType.style.display = 'block';
+                        toggleCmSearchProgramType.style.display = 'none';
+                    } else if (cmSearchCondition.options[cmSearchCondition.selectedIndex].value == 'cmProjectContent') {
+                        toggleCmSearchType.style.display = 'none';
+                        toggleCmSearchProgramType.style.display = 'block';
+                    } else {
+                        toggleCmSearchType.style.display = 'none';
+                        toggleCmSearchProgramType.style.display = 'none';
+                    }
+
+                    return;
+                }
+
+                function cmsearchProjectContentConfirm() {
+                    var cmSearchCondition = document.getElementById('cmSearchCondition');
+
+                    if (cmSearchCondition.options[cmSearchCondition.selectedIndex].value == 'cmProjectContent') {
+                        if (confirm('연구내용 검색 시 시간이 오래걸립니다. 그래도 검색하시겠습니까?')) {
+                            return true;
+                        }
+                    } else {
+                        return true;
+                    }
+
+                    return false;
+                }
+
+                function switchActionUrl() {
+                    $('#cmSearch').attr('action', '../cm/search.do');
+                    $('#cmSearch').submit();
+                }
+
+                function cmSearchCheck() {
+                    if (cmsearchProjectContentConfirm()) {
+                        var cmSearchKeyword = $('#cmSearchKeyword').val();
+
+                        if (cmSearchKeyword == '') {
+                            cmSearchKeyword = $('#resultcmSearchKeyword').val();
+
+                            if (cmSearchKeyword == '') {
+                                alert('검색어를 입력해주세요.');
+                            }
+                            return false;
+                        }
+                    }
+                }
+            </script>
+
+            <!--//common search-->
+
+            <script src="https://samsungstf.org/ssrfPr/js/function.js"></script>
+            <script src="https://samsungstf.org/ssrfPr/js/common.js"></script>
+
+            <%- include("./include/sub_footer.html") %>
+
+            <div class="dimmed"></div>
+        </div>
+    </body>
+</html>

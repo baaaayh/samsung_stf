@@ -1,0 +1,235 @@
+<html lang="ko">
+    <%- include("./include/sub_head.html") %>
+    <body>
+        <!--wrapper.-->
+        <div class="wrapper subpage">
+            <%- include("./include/sub_header.html") %>
+
+            <!--inner contents-->
+            <div class="wrapper_inner sub">
+                <div class="contact_hd_wrap">
+                    <!--tab ui-->
+                    <ul class="ui_tab sok400">
+                        <li class="active"><a href="./map01.do">삼성미래기술육성재단</a></li>
+                        <li><a href="./map02.do">삼성전자 미래기술육성센터</a></li>
+                    </ul>
+                    <!--//tab ui-->
+
+                    <!--map-->
+                    <div class="map_box org_type_a">
+                        <div class="inner">
+                            <div class="object road" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
+                            <div class="object subway" style="opacity: 1"></div>
+                            <div class="object bd1" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
+                            <div class="object bd1_txt" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
+                            <div class="object bdm1" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
+                            <div class="object bdm1_txt" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
+                            <div class="object bdm2" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
+                            <div class="object bdm2_txt" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
+                            <div class="object bdm3" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
+                            <div class="object bdm3_txt" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
+                            <div class="object bdm4" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
+                            <div class="object bdm4_txt" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"></div>
+                        </div>
+                    </div>
+                    <!--//map-->
+                </div>
+
+                <div class="contact_info_wrap">
+                    <div class="inner">
+                        <div class="bs_info">
+                            <p class="org sok600">삼성미래기술육성재단</p>
+                            <address class="sok300">(06620) 서울특별시 서초구 서초대로 74길 4 삼성생명 서초타워 5층</address>
+                            <p class="tel sol400"><span class="sol700">Tel.</span>02.597.0401</p>
+                            <p class="tel sol400"><span class="sol700">E-mail.</span>science.stf@samsung.com</p>
+                        </div>
+                        <div class="add_info">
+                            <a href="http://naver.me/FJGhwaA4" target="_blank" title="네이버지도 새창으로 열기" class="map_shortcut naver"><span>네이버지도</span></a>
+                            <a
+                                href="https://www.google.com/maps/place/(%EC%9E%AC)%EC%82%BC%EC%84%B1%EB%AF%B8%EB%9E%98%EA%B8%B0%EC%88%A0%EC%9C%A1%EC%84%B1%EC%9E%AC%EB%8B%A8/@37.4967145,127.0235112,17z/data=!3m1!4b1!4m5!3m4!1s0x357ca15bbba0654f:0x95be7266d2f10b7b!8m2!3d37.4967103!4d127.0256999?hl=ko"
+                                target="_blank"
+                                class="map_shortcut google"
+                                title="구글지도 새창으로 열기"
+                                ><span>구글지도</span></a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="inner">
+                        <div class="traffic_method_info">
+                            <p class="tit sok600">버스 이용 시</p>
+                            <div class="info_detail">
+                                <p class="xt1 sok400">마을버스 서초 03번<br />간선버스 145번, 421번</p>
+                                <p class="xt2 sok300">강남역 정류장,<br />강남역 하나은행 정류장 하차</p>
+                            </div>
+                        </div>
+                        <div class="traffic_method_info">
+                            <p class="tit sok600">지하철 이용 시</p>
+                            <div class="info_detail">
+                                <p class="xt1 sok400">2호선 강남역 하차 8번 출구<br />신분당선 강남역 하차 6번 출구</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//inner contents-->
+        </div>
+        <!--wrapper.-->
+
+        <!--If you use the script on this page, please put it here -->
+        <script>
+            $(document).ready(function () {
+                var objA = $('.org_type_a');
+
+                TweenMax.to(objA.find('.road'), 1.2, { transform: 'matrix(1, 0, 0, 1, 0, 0)', opacity: 1, ease: Expo.ease });
+                TweenMax.to(objA.find('.subway'), 0.6, { transform: 'matrix(1, 0, 0, 1, 0, 0)', opacity: 1, ease: Expo.ease, delay: 1 });
+                TweenMax.to(objA.find('.bd1'), 0.8, { transform: 'matrix(1, 0, 0, 1, 0, 0)', opacity: 1, ease: Expo.ease, delay: 1.4 });
+                TweenMax.to(objA.find('.bdm1'), 0.6, { transform: 'matrix(1, 0, 0, 1, 0, 0)', opacity: 1, ease: Expo.ease, delay: 2 });
+                TweenMax.to(objA.find('.bdm2'), 0.7, { transform: 'matrix(1, 0, 0, 1, 0, 0)', opacity: 1, ease: Expo.ease, delay: 2.4 });
+                TweenMax.to(objA.find('.bdm3'), 0.8, { transform: 'matrix(1, 0, 0, 1, 0, 0)', opacity: 1, ease: Expo.ease, delay: 2.8 });
+                TweenMax.to(objA.find('.bdm4'), 0.9, { transform: 'matrix(1, 0, 0, 1, 0, 0)', opacity: 1, ease: Expo.ease, delay: 3.2 });
+                TweenMax.to(objA.find('.bdm4_txt'), 0.6, { transform: 'matrix(1, 0, 0, 1, 0, 0)', opacity: 1, ease: Expo.ease, delay: 3.8 });
+
+                TweenMax.to(objA.find('.bdm3_txt'), 0.4, { transform: 'matrix(1, 0, 0, 1, 0, 0)', opacity: 1, ease: Expo.ease, delay: 4.2 });
+                TweenMax.to(objA.find('.bdm2_txt'), 0.4, { transform: 'matrix(1, 0, 0, 1, 0, 0)', opacity: 1, ease: Expo.ease, delay: 4.2 });
+                TweenMax.to(objA.find('.bdm1_txt'), 0.4, { transform: 'matrix(1, 0, 0, 1, 0, 0)', opacity: 1, ease: Expo.ease, delay: 4.2 });
+
+                TweenMax.to(objA.find('.bd1_txt'), 0.6, { transform: 'matrix(1, 0, 0, 1, 0, 0)', opacity: 1, ease: Expo.ease, delay: 4.6 });
+            });
+        </script>
+        <!--//-->
+
+        <!--common search-->
+        <div class="cm_search_wrap">
+            <div class="inner">
+                <div class="clsBtn"></div>
+
+                <div class="searchbox_grid">
+                    <form class="_searchForm" method="get" id="cmSearch" name="cmSearch" action="../cm/search.do" onsubmit="return cmSearchCheck()">
+                        <div class="cm_search_type">
+                            <div class="opt lab_w185" style="margin-right: 25px">
+                                <select class="sok400" id="cmSearchCondition" name="cmSearchCondition" value="" onchange="searchCmType()">
+                                    <option value="cmFaq">자주묻는 질문</option>
+                                    <option value="cmIntro">소개</option>
+                                    <option value="cmNewsroom">뉴스</option>
+                                    <option value="cmProgram">프로그램</option>
+                                    <option value="cmResearcher">과제&amp;연구자</option>
+                                    <option value="cmProjectContent">연구내용</option>
+                                </select>
+                            </div>
+                            <div id="toggleCmSearchType" style="display: none">
+                                <div class="opt lab_w185">
+                                    <select class="sok400" id="cmsearchType" name="cmsearchType" value="">
+                                        <option value="researcherName">연구자</option>
+                                        <option value="projectName">연구제목</option>
+                                        <option value="program">연구분야</option>
+                                        <option value="researchBelong">소속기관</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="toggleCmSearchProgramType" style="display: none">
+                                <div class="opt lab_w185">
+                                    <select class="sok400" id="cmsearchProgramType" name="cmsearchProgramType" value="">
+                                        <option value="1">기초과학</option>
+                                        <option value="2">소재</option>
+                                        <option value="3">ICT</option>
+                                        <option value="4">지정테마</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="searchbox" style="padding-top: 15px">
+                            <div class="ipt cm_search">
+                                <input class="sok500" placeholder="검색어를 입력하세요." type="text" id="cmSearchKeyword" name="cmSearchKeyword" title="검색" />
+                            </div>
+                            <div class="ipt_cancle">
+                                <a class="cancle" id="cmSearchCancle"></a>
+                            </div>
+
+                            <div class="ipt_submit">
+                                <button type="submit" class="search_submit"></button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="linkbox">
+                        <p class="tit sok600">링크 바로가기</p>
+                        <ul class="linkbox_wrap">
+                            <li><a href="../intro/listFaq.do" title="자주묻는 질문" target="_self">자주묻는 질문</a></li>
+                            <li><a href="../cm/map01.do" title="찾아오시는 길" target="_self">찾아오시는 길</a></li>
+                            <!-- <li><a href="../intro/writeQna.do" title ="1:1문의" target="_self">1:1문의</a></li> -->
+                            <li><a href="../intro/business.do" title="사회공헌사업" target="_self">사회공헌사업</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function searchCmType() {
+                var cmSearchCondition = document.getElementById('cmSearchCondition');
+                var toggleCmSearchType = document.getElementById('toggleCmSearchType');
+                var toggleCmSearchProgramType = document.getElementById('toggleCmSearchProgramType');
+
+                var cmsearchType = document.getElementById('cmsearchType');
+                var cmsearchProgramType = document.getElementById('cmsearchProgramType');
+
+                if (cmSearchCondition.options[cmSearchCondition.selectedIndex].value == 'cmResearcher') {
+                    toggleCmSearchType.style.display = 'block';
+                    toggleCmSearchProgramType.style.display = 'none';
+                } else if (cmSearchCondition.options[cmSearchCondition.selectedIndex].value == 'cmProjectContent') {
+                    toggleCmSearchType.style.display = 'none';
+                    toggleCmSearchProgramType.style.display = 'block';
+                } else {
+                    toggleCmSearchType.style.display = 'none';
+                    toggleCmSearchProgramType.style.display = 'none';
+                }
+
+                return;
+            }
+
+            function cmsearchProjectContentConfirm() {
+                var cmSearchCondition = document.getElementById('cmSearchCondition');
+
+                if (cmSearchCondition.options[cmSearchCondition.selectedIndex].value == 'cmProjectContent') {
+                    if (confirm('연구내용 검색 시 시간이 오래걸립니다. 그래도 검색하시겠습니까?')) {
+                        return true;
+                    }
+                } else {
+                    return true;
+                }
+
+                return false;
+            }
+
+            function switchActionUrl() {
+                $('#cmSearch').attr('action', '../cm/search.do');
+                $('#cmSearch').submit();
+            }
+
+            function cmSearchCheck() {
+                if (cmsearchProjectContentConfirm()) {
+                    var cmSearchKeyword = $('#cmSearchKeyword').val();
+
+                    if (cmSearchKeyword == '') {
+                        cmSearchKeyword = $('#resultcmSearchKeyword').val();
+
+                        if (cmSearchKeyword == '') {
+                            alert('검색어를 입력해주세요.');
+                        }
+                        return false;
+                    }
+                }
+            }
+        </script>
+
+        <!--//common search-->
+
+        <script src="https://samsungstf.org/ssrfPr/js/function.js"></script>
+        <script src="https://samsungstf.org/ssrfPr/js/common.js"></script>
+
+        <%- include("./include/sub_footer.html") %>
+
+        <div class="dimmed"></div>
+    </body>
+</html>
