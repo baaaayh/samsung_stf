@@ -288,6 +288,7 @@ body {
             position: absolute;
         }
         .card__inner {
+            display: block;
             position: relative;
             padding: 40px;
             box-sizing: border-box;
@@ -321,9 +322,9 @@ body {
             }
             .card__menu {
                 margin-top: 20px;
-                a {
+                span {
                     display: inline-block;
-                    padding: 0 21px;
+                    padding: 0 30px;
                     border-radius: 21px;
                     font-family: "Rubik";
                     font-size: 16px;
@@ -389,4 +390,9 @@ body {
             }
         }
     }
+}
+
+.topbtn {
+    display: none;
+    visibility: hidden;
 }

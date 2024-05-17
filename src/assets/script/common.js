@@ -8,7 +8,7 @@ $(function () {
     const header = {
         openMenu() {
             const $this = $(this);
-            $depth2.stop().slideDown(250, 'easeInSine');
+            $depth2.slideDown(250, 'easeInSine');
         },
         closeMenu() {
             const $this = $(this);

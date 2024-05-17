@@ -26,7 +26,7 @@ $(function () {
                 speed: 1500,
                 infinite: true,
                 autoplay: true,
-                autoplaySpeed: 7000,
+                autoplaySpeed: 4000,
                 pauseOnHover: true,
                 dots: true,
                 appendDots: $('.main-kv__control'),

@@ -226,6 +226,7 @@
             position: absolute;
         }
         .card__inner {
+            display: block;
             position: relative;
             min-height: 120px;
             padding: 20px;
@@ -250,7 +251,7 @@
             }
             .card__menu {
                 margin-top: 15px;
-                a {
+                span {
                     display: inline-block;
                     padding: 0 20px;
                     border-radius: 16px;
@@ -279,7 +280,7 @@
             }
             .card__menu {
                 margin-top: 15px;
-                a {
+                span {
                     display: inline-block;
                     padding: 0 20px;
                     border-radius: 16px;
@@ -292,6 +293,11 @@
             }
         }
     }
+}
+
+.topbtn {
+    display: none;
+    visibility: hidden;
 }
 
 @media screen and (max-width: 360px){

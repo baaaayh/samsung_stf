@@ -306,6 +306,12 @@
         color: #666;
         box-sizing: border-box;
     }
+    &__text {
+        margin-top: 5px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
 }
 
 .family-site {
@@ -367,7 +373,6 @@
         }
     }
 
-    
 }
 
 #subLocation {
