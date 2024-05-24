@@ -539,6 +539,7 @@
   transition: all ease .2s;
 }
 
+
 .assign_wrap .assign_boxc .assign_list > div > p {
     position: relative;
     margin-top: 10px;
@@ -572,3 +573,6 @@
 }
 
 
+.sitemap_wrap .inner_cr .stmap_list dl + dl {
+    margin-left: 80px;
+}
