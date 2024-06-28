@@ -397,3 +397,39 @@ body {
     display: none;
     visibility: hidden;
 }
+
+.main-kv__inner {
+    padding-bottom: 0;
+}
+.main-kv__view::after {
+    display: none;
+}
+.main-kv__nav {
+    position: relative;
+    background-color: #fff;
+}
+.main-kv__content {
+    padding-top: 100px;
+}
+.main-kv__nav::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 0 0 0 15px;
+    box-shadow: -15px 0 0 0 #fff;
+}
+.main-kv__nav::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 0px 0px 15px 0px;
+    box-shadow: 15px 0px 0px 0px #fff;
+}
