@@ -28,6 +28,7 @@
 
     &:hover {
         background-color: #fff;
+
         .btn-default__text {
             color: #000;
         }
@@ -43,20 +44,20 @@
     background-color: #fff;
     font-family: "Pretendard", "맑은 고딕", "Malgun Gothic", sans-serif;
     z-index: 41;
-    
+
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         max-width: 1760px;
         width: 100%;
-        margin:0 auto;
+        margin: 0 auto;
         padding: 0 20px;
         box-sizing: border-box;
     }
 
     &::after {
-        content:"";
+        content: "";
         position: absolute;
         top: 100px;
         left: 0;
@@ -67,7 +68,7 @@
         z-index: 1;
     }
 
-    
+
 }
 
 .dim {
@@ -81,6 +82,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 11;
     transition: 0.24s ease;
+
     &.active {
         opacity: 1;
         visibility: visible;
@@ -90,11 +92,13 @@
 .logo {
     display: inline-block;
     height: 100px;
+
     a {
         display: inline-flex;
         height: 100%;
         align-items: center;
         justify-content: center;
+
         img {
             width: 178px;
         }
@@ -104,9 +108,10 @@
 .gnb {
     &__list {
         display: flex;
-        > li {
 
-            > a {
+        >li {
+
+            >a {
                 position: relative;
                 display: block;
                 padding: 0 51px;
@@ -116,8 +121,9 @@
                 text-align: center;
                 letter-spacing: -0.36px;
                 box-sizing: border-box;
+
                 &::before {
-                    content:'';
+                    content: '';
                     display: inline-block;
                     position: absolute;
                     bottom: 0;
@@ -129,9 +135,11 @@
                     transition: 0.24s ease;
                 }
             }
+
             &.active {
-                > a {
+                >a {
                     color: #1428A0;
+
                     &::before {
                         width: 100%;
                     }
@@ -139,13 +147,16 @@
             }
         }
     }
+
     .depth2 {
         display: none;
         flex: 1;
         box-sizing: border-box;
+
         ul {
             padding-top: 12px;
             padding-bottom: 48px;
+
             li {
                 a {
                     display: block;
@@ -155,6 +166,7 @@
                     font-size: 16px;
                     line-height: 1.2;
                     letter-spacing: -0.32px;
+
                     &:hover {
                         font-weight: 500;
                         color: #1428A0;
@@ -178,6 +190,7 @@
     display: flex;
     gap: 20px;
     justify-content: space-between;
+
     a {
         font-size: 14px;
         line-height: 1;
@@ -213,9 +226,11 @@
 .footer {
     height: auto;
     background-color: #fafafa;
+
     &.sub {
         background-color: #fafafa;
     }
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -225,9 +240,11 @@
         padding: 0 20px;
         box-sizing: border-box;
     }
+
     &__nav {
         display: flex;
         gap: 40px;
+
         li {
             a {
                 display: block;
@@ -238,21 +255,25 @@
             }
         }
     }
+
     &__top {
         padding: 26px 0;
         border-bottom: 1px solid #ebebeb;
         box-sizing: border-box;
     }
+
     &__bottom {
         padding: 30px 0 37px;
         box-sizing: border-box;
     }
+
     &__info {
-        > ul {
+        >ul {
             display: flex;
             gap: 100px;
         }
     }
+
     &__tit {
         font-size: 16px;
         font-weight: 600;
@@ -261,11 +282,14 @@
         letter-spacing: -0.32px;
         white-space: nowrap;
     }
+
     &__item {
         display: flex;
         gap: 20px;
+
         ul {
             display: flex;
+
             li {
                 position: relative;
                 display: flex;
@@ -275,8 +299,9 @@
                 letter-spacing: -0.28px;
                 color: #666;
                 padding: 0 20px;
+
                 &::before {
-                    content:'';
+                    content: '';
                     display: inline-block;
                     position: absolute;
                     top: 50%;
@@ -286,18 +311,22 @@
                     background-color: #ddd;
                     transform: translateY(-50%);
                 }
+
                 &:first-child {
                     padding-left: 0;
+
                     &::before {
                         display: none;
                     }
                 }
+
                 &:last-child {
                     padding-right: 0;
                 }
             }
         }
     }
+
     &__copyright {
         padding-top: 60px;
         font-size: 14px;
@@ -306,8 +335,10 @@
         color: #666;
         box-sizing: border-box;
     }
+
     &__text {
         margin-top: 5px;
+
         &:first-child {
             margin-top: 0;
         }
@@ -316,6 +347,7 @@
 
 .family-site {
     position: relative;
+
     button {
         position: relative;
         display: inline-block;
@@ -329,8 +361,9 @@
         letter-spacing: -0.28px;
         text-align: left;
         box-sizing: border-box;
+
         &::after {
-            content:'';
+            content: '';
             position: absolute;
             top: 50%;
             right: 20px;
@@ -341,12 +374,14 @@
             transform: translateY(-50%);
             transition: 0.14s ease;
         }
+
         &.active {
             &::after {
                 transform: translateY(-50%) rotate(180deg);
             }
         }
     }
+
     ul {
         display: none;
         position: absolute;
@@ -357,12 +392,15 @@
         border: 1px solid #ececec;
         border-radius: 5px;
         box-sizing: border-box;
+
         li {
             width: 100%;
             border-bottom: 1px solid #ececec;
+
             &:last-child {
                 border-bottom: 0;
             }
+
             a {
                 display: block;
                 font-size: 14px;
@@ -382,6 +420,7 @@
             box-shadow: 0px 24px 20px 2px rgba(0, 0, 0, 0.25);
         }
     }
+
     &::after {
         display: none;
     }
@@ -394,153 +433,189 @@
 
 /*cm_assign */
 .assign_wrap {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 200;
-  overflow: hidden;
-  opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 200;
+    overflow: hidden;
+    opacity: 0;
 }
+
 .assign_wrap .assign_boxc {
-  width: 340px;
-  opacity: 0;
-  background: #fff;
-  max-width: 340px;
-  min-width: 340px;
-  padding: 60px 45px 40px 45px;
+    width: 340px;
+    opacity: 0;
+    background: #fff;
+    max-width: 340px;
+    min-width: 340px;
+    padding: 60px 45px 40px 45px;
 }
-.assign_wrap .assign_boxc > .tit {
-  font-size: 35px;
-  color: #222;
-  text-align: center;
+
+.assign_wrap .assign_boxc>.tit {
+    font-size: 35px;
+    color: #222;
+    text-align: center;
 }
+
 .assign_wrap .assign_boxc .assign_list {
-  width: 340px;
-  margin: 38px auto 0 auto;
+    width: 340px;
+    margin: 38px auto 0 auto;
 }
-.assign_wrap .assign_boxc .assign_list > div > a {
-  background: #fff;
-  width: 340px;
-  border: 1px solid #d6d6d6;
-  box-sizing: border-box;
-  line-height: 58px;
-  text-align: center;
-  padding-left: 25px;
-  position: relative;
-  cursor: pointer;
-  z-index: 1;
+
+.assign_wrap .assign_boxc .assign_list>div>a {
+    background: #fff;
+    width: 340px;
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+    line-height: 58px;
+    text-align: center;
+    padding-left: 25px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
 }
-.assign_wrap .assign_boxc .assign_list > div > a:before {
-  content: "";
-  width: 0%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: #439ec3;
-  transition: all ease .4s;
+
+.assign_wrap .assign_boxc .assign_list>div>a:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #439ec3;
+    transition: all ease .4s;
 }
-.assign_wrap .assign_boxc .assign_list > div > a:hover:before, .assign_wrap .assign_boxc .assign_list > div > a:focus:before {
-  width: 100%;
-  transition: all ease .4s;
-  z-index: -1;
+
+.assign_wrap .assign_boxc .assign_list>div>a:hover:before,
+.assign_wrap .assign_boxc .assign_list>div>a:focus:before {
+    width: 100%;
+    transition: all ease .4s;
+    z-index: -1;
 }
-.assign_wrap .assign_boxc .assign_list > div > a:hover:after, .assign_wrap .assign_boxc .assign_list > div > a:focus:after {
-  background: url(https://samsungstf.org/ssrfPr/images/common/assign_arr_on.png);
-  transition: all ease .2s;
-  transition-delay: .2s;
+
+.assign_wrap .assign_boxc .assign_list>div>a:hover:after,
+.assign_wrap .assign_boxc .assign_list>div>a:focus:after {
+    background: url(https://samsungstf.org/ssrfPr/images/common/assign_arr_on.png);
+    transition: all ease .2s;
+    transition-delay: .2s;
 }
-.assign_wrap .assign_boxc .assign_list > div > a:hover span.ico, .assign_wrap .assign_boxc .assign_list > div > a:focus span.ico {
-  transition: all ease .2s;
+
+.assign_wrap .assign_boxc .assign_list>div>a:hover span.ico,
+.assign_wrap .assign_boxc .assign_list>div>a:focus span.ico {
+    transition: all ease .2s;
 }
-.assign_wrap .assign_boxc .assign_list > div > a:hover span.ico:after, .assign_wrap .assign_boxc .assign_list > div > a:focus span.ico:after {
-  background: #7cbbd5;
-  transition: all ease .2s;
+
+.assign_wrap .assign_boxc .assign_list>div>a:hover span.ico:after,
+.assign_wrap .assign_boxc .assign_list>div>a:focus span.ico:after {
+    background: #7cbbd5;
+    transition: all ease .2s;
 }
-.assign_wrap .assign_boxc .assign_list > div > a:hover span.ico.rico1, .assign_wrap .assign_boxc .assign_list > div > a:focus span.ico.rico1 {
-  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_01_on.png);
+
+.assign_wrap .assign_boxc .assign_list>div>a:hover span.ico.rico1,
+.assign_wrap .assign_boxc .assign_list>div>a:focus span.ico.rico1 {
+    background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_01_on.png);
 }
-.assign_wrap .assign_boxc .assign_list > div > a:hover span.ico.rico2, .assign_wrap .assign_boxc .assign_list > div > a:focus span.ico.rico2 {
-  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_02_on.png);
+
+.assign_wrap .assign_boxc .assign_list>div>a:hover span.ico.rico2,
+.assign_wrap .assign_boxc .assign_list>div>a:focus span.ico.rico2 {
+    background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_02_on.png);
 }
-.assign_wrap .assign_boxc .assign_list > div > a:hover span.ico.rico3, .assign_wrap .assign_boxc .assign_list > div > a:focus span.ico.rico3 {
-  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_03_on.png);
+
+.assign_wrap .assign_boxc .assign_list>div>a:hover span.ico.rico3,
+.assign_wrap .assign_boxc .assign_list>div>a:focus span.ico.rico3 {
+    background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_03_on.png);
 }
-.assign_wrap .assign_boxc .assign_list > div > a:hover span.ico.rico4, .assign_wrap .assign_boxc .assign_list > div > a:focus span.ico.rico4 {
-  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_04_on.png);
+
+.assign_wrap .assign_boxc .assign_list>div>a:hover span.ico.rico4,
+.assign_wrap .assign_boxc .assign_list>div>a:focus span.ico.rico4 {
+    background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_04_on.png);
 }
-.assign_wrap .assign_boxc .assign_list > div > a:hover span.ico.rico5, .assign_wrap .assign_boxc .assign_list > div > a:focus span.ico.rico5 {
-  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_05_on.png);
+
+.assign_wrap .assign_boxc .assign_list>div>a:hover span.ico.rico5,
+.assign_wrap .assign_boxc .assign_list>div>a:focus span.ico.rico5 {
+    background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_05_on.png);
 }
-.assign_wrap .assign_boxc .assign_list > div > a:hover span.text, .assign_wrap .assign_boxc .assign_list > div > a:focus span.text {
-  color: #fff;
-  transition: all ease .2s;
+
+.assign_wrap .assign_boxc .assign_list>div>a:hover span.text,
+.assign_wrap .assign_boxc .assign_list>div>a:focus span.text {
+    color: #fff;
+    transition: all ease .2s;
 }
-.assign_wrap .assign_boxc .assign_list > div > a {
-  display: block;
-  width: 100%;
-  height: 100%;
+
+.assign_wrap .assign_boxc .assign_list>div>a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
-.assign_wrap .assign_boxc .assign_list > div + div {
-  margin-top: 20px;
+
+.assign_wrap .assign_boxc .assign_list>div+div {
+    margin-top: 20px;
 }
-.assign_wrap .assign_boxc .assign_list > div > a:after {
-  content: "";
-  position: absolute;
-  background: url(https://samsungstf.org/ssrfPr/images/common/assign_arr.png);
-  width: 6px;
-  height: 10px;
-  top: 50%;
-  margin-top: -5px;
-  right: 20px;
-  transition: all ease .2s;
+
+.assign_wrap .assign_boxc .assign_list>div>a:after {
+    content: "";
+    position: absolute;
+    background: url(https://samsungstf.org/ssrfPr/images/common/assign_arr.png);
+    width: 6px;
+    height: 10px;
+    top: 50%;
+    margin-top: -5px;
+    right: 20px;
+    transition: all ease .2s;
 }
-.assign_wrap .assign_boxc .assign_list > div > a span.ico {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  top: 50%;
-  margin-top: -18px;
-  left: 11px;
-  transition: all ease .2s;
+
+.assign_wrap .assign_boxc .assign_list>div>a span.ico {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 50%;
+    margin-top: -18px;
+    left: 11px;
+    transition: all ease .2s;
 }
-.assign_wrap .assign_boxc .assign_list > div > a span.ico:after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 40px;
-  right: -12px;
-  background: #d6d6d6;
-  top: -2px;
-  transition: all ease .2s;
+
+.assign_wrap .assign_boxc .assign_list>div>a span.ico:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    right: -12px;
+    background: #d6d6d6;
+    top: -2px;
+    transition: all ease .2s;
 }
-.assign_wrap .assign_boxc .assign_list > div > a span.ico.rico1 {
-  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_01.png);
+
+.assign_wrap .assign_boxc .assign_list>div>a span.ico.rico1 {
+    background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_01.png);
 }
-.assign_wrap .assign_boxc .assign_list > div > a span.ico.rico2 {
-  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_02.png);
+
+.assign_wrap .assign_boxc .assign_list>div>a span.ico.rico2 {
+    background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_02.png);
 }
-.assign_wrap .assign_boxc .assign_list > div > a span.ico.rico3 {
-  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_03.png);
+
+.assign_wrap .assign_boxc .assign_list>div>a span.ico.rico3 {
+    background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_03.png);
 }
-.assign_wrap .assign_boxc .assign_list > div > a span.ico.rico4 {
-  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_04.png);
+
+.assign_wrap .assign_boxc .assign_list>div>a span.ico.rico4 {
+    background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_04.png);
 }
-.assign_wrap .assign_boxc .assign_list > div > a span.ico.rico5 {
-  background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_05.png);
+
+.assign_wrap .assign_boxc .assign_list>div>a span.ico.rico5 {
+    background: url(https://samsungstf.org/ssrfPr/images/common/assign_ico_05.png);
 }
-.assign_wrap .assign_boxc .assign_list > div > a span.text {
-  color: #222;
-  font-size: 20px;
-  transition: all ease .2s;
+
+.assign_wrap .assign_boxc .assign_list>div>a span.text {
+    color: #222;
+    font-size: 20px;
+    transition: all ease .2s;
 }
 
 
-.assign_wrap .assign_boxc .assign_list > div > p {
+.assign_wrap .assign_boxc .assign_list>div>p {
     position: relative;
     margin-top: 10px;
     padding-left: 10px;
@@ -550,7 +625,7 @@
     color: #444;
 
     &::before {
-        content:'';
+        content: '';
         position: absolute;
         top: 7px;
         left: 0;
@@ -563,16 +638,16 @@
 }
 
 .assign_wrap .assign_boxc .clsbtn_r {
-  width: 25px;
-  height: 26px;
-  position: absolute;
-  top: 0;
-  right: -45px;
-  background: url(https://samsungstf.org/ssrfPr/images/common/clsbtn_r.png);
-  cursor: pointer;
+    width: 25px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    right: -45px;
+    background: url(https://samsungstf.org/ssrfPr/images/common/clsbtn_r.png);
+    cursor: pointer;
 }
 
 
-.sitemap_wrap .inner_cr .stmap_list dl + dl {
+.sitemap_wrap .inner_cr .stmap_list dl+dl {
     margin-left: 80px;
 }
